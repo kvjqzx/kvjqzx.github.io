@@ -1,3 +1,11 @@
+---
+layout: post
+category : Embedded
+tagline: "Supporting tagline"
+tags : [Bootloader]
+---
+{% include JB/setup %}
+
 ##Bootloader是什么?
 系统上电后，需要一段程序来进行初始化，如果它能将操作系统内核复制到内存中运行，无论从本地还是从远端，就称这段程序为Bootloader。
 
