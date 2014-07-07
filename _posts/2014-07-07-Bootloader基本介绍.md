@@ -74,7 +74,7 @@ Bootloader第二阶段
 为了获得更快的执行速度，通常把stage2加载到RAM空间中来执行，因此必须为stage2准备好一段可用的RAM空间。
 
 ##常见的Bootloader
-* **[U-Boot]**(ftp://ftp.denx.de/pub/u-boot/)
+* [**U-Boot**](ftp://ftp.denx.de/pub/u-boot/)
 开源、支持多个处理器系列，在嵌入式开发比较常用。
 * **Redboot**
 开源、是Redhat公司随eCos发布的一个BOOT方案。
