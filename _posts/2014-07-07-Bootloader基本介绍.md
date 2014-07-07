@@ -24,6 +24,7 @@ CPU上电后，会从某个地址开始执行，比如MIPS架构的CPU会从0xBF
 - 用户应用程序 特定于用户的应用程序，它们也存储在文件系统中。
 
 
+##Bootloader的启动过程
 Bootloader的启动过程可分为单阶段（Single Stage）、多阶段（Multi Stage）两种。
 
 通常多阶段的Bootloader能提供更为复杂的功能以及更好的可移植性。从固态设备上启动的Bootloader大多都是两阶段的启动过程。
