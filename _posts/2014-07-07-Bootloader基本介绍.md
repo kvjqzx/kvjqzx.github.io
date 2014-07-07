@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Embedded
+category : lessons
 tagline: "Supporting tagline"
 tags : [Bootloader]
 ---
