@@ -4,11 +4,10 @@ title: Hello World!
 description: WlanEasy
 tagline: Supporting tagline
 ---
-<div class="postlist">
-    {% for post in paginator.posts %}
-    <div class="overview">
-        <div class="date">{{ post.date | date: "%b %d, %Y" }}</div>
-        <div class="detail"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
-    </div>
-    {% endfor %}
-</div>
+Here is posts list.
+
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
