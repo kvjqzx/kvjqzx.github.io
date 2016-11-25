@@ -20,4 +20,5 @@ Android中WiFi相关代码位置
   * [platform/external/wpa_supplicant_8](http://androidxref.com/7.0.0_r1/xref/external/wpa_supplicant_8/)
 
 参考书
-* ![802.11 Wireless Networks-The definitive Guide]({{ BASE_PATH }}/assets/docs/802.11_Wireless_Networks.pdf)
+-----
+* [802.11 Wireless Networks-The definitive Guide]({{ BASE_PATH }}/assets/docs/802.11_Wireless_Networks.pdf)
