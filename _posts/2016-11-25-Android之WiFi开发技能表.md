@@ -30,6 +30,11 @@ Android中WiFi相关代码位置
 * [Aircrack-ng](http://www.aircrack-ng.org/)
   Aircrack-ng is a complete suite of tools to assess WiFi network security.
 
+相关命令
+-----
+* [iw](http://linuxwireless.org/en/users/Documentation/iw/)
+A new nl80211 based CLI configuration utility for wireless devices. It supports all new drivers that have been added to the kernel recently. The old tool iwconfing, which uses Wireless Extensions interface, is deprecated and it's strongly recommended to switch to iw and nl80211.
+
 参考书
 -----
 * [802.11 Wireless Networks-The definitive Guide]({{ BASE_PATH }}/assets/docs/802.11_Wireless_Networks.pdf)
