@@ -4,10 +4,10 @@ title: WlanEasy
 tagline: Supporting tagline
 ---
 <div id="home">
-<h2 class="fade">Here is posts list:</h2>
+Here is posts list:
 <ul class="posts">
   {% for post in site.posts %}
-    <li>&raquo; <a href="{{ post.url }}">{{ post.title }}</a><span>{{ post.date | date_to_string }}</span></li>
+    &raquo;<span>{{ post.date | date_to_string }}</span><a href="{{ post.url }}">{{ post.title }}</a>
     <br>
   {% endfor %}
 </ul>
