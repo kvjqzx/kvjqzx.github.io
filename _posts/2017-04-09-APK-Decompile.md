@@ -27,5 +27,5 @@ macOS上工具下载链接
 -----
 * [apktool script]({{ BASE_PATH }}/assets/tools/apktool)
 * [apktool_2.2.2.jar]({{ BASE_PATH }}/assets/tools/apktool_2.2.2.jar)
-* [dex2jar-2.0]({{ BASE_PATH }}/assets/tools/apktool/dex2jar-2.0.zip)
-* [jd-gui-osx-1.4.0.tar]({{ BASE_PATH }}/assets/tools/apktool/jd-gui-osx-1.4.0.tar)
+* [dex2jar-2.0]({{ BASE_PATH }}/assets/tools/dex2jar-2.0.zip)
+* [jd-gui-osx-1.4.0.tar]({{ BASE_PATH }}/assets/tools/jd-gui-osx-1.4.0.tar)
