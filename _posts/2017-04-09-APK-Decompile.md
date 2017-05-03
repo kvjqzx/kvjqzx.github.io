@@ -15,10 +15,11 @@ macOS工具安装
 -----
 * Apktool
 下载脚本和jar文件，分别重命名为apktool和apktool.jar，放到`/usr/local/bin`目录下，并增加可执行权限。
-
-使用：
-`apktool d name.apk`  反编译
+```
+使用：  
+`apktool d name.apk`  反编译  
 `apktool b name` 将改完后的文件重现打包，生成的apk在name文件夹下的dist目录
+```
 * dex2jar
 需要将d2j_invoke.sh和d2j-dex2jar.sh增加可执行权限
 `d2j-dexjar.sh name.apk`  将apk转化为jar文件，将该jar文件拖到JD-GUI里面，即可看到源码，通过源码对比smali文件，可以修改smali文件重新打包。
