@@ -41,12 +41,12 @@ int mStrictSock; // NETLINK_NETFILTER  *NETLINK_FORMAT_BINARY_UNICAST*
 ```
 
 * NETLINK_KOBJECT_UEVENT   
-  代表kobject时间，一般用来通知内核中某个模块的加载或卸载
-* NETLINK_ROUTE
+  代表kobject事件，一般用来通知内核中某个模块的加载或卸载
+* NETLINK_ROUTE  
   代表routing或link改变时对应的消息
-* NETLINK_NFLOG
+* NETLINK_NFLOG  
   带宽控制相关，网络数据超过一定字节后kernel发送相关警告
-* NETLINK_NETFILTER
+* NETLINK_NETFILTER  
   Offer to detect non-SSL/TLS network traffic
 
 在创建socket的时候，将创建上面的4中类型。
@@ -64,8 +64,8 @@ if (handler->start()) {
 }
 ```
 
-
 Netd 如何将消息发送给Framework层
 ---
 
 Netd 如何接收Framework层的消息
+---
