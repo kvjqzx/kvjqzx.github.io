@@ -34,10 +34,10 @@ Netd 如何接收UEvent消息
 在NetlinkManager里面定义了以下几个socket用于接收不同的UEvent事件。
 
 ```
-int mUeventSock; // NETLINK_KOBJECT_UEVENT  *NETLINK_FORMAT_ASCII*
-int mRouteSock;  // NETLINK_ROUTE  *NETLINK_FORMAT_BINARY*
-int mQuotaSock;  // NETLINK_NFLOG  *NETLINK_FORMAT_BINARY*
-int mStrictSock; // NETLINK_NETFILTER  *NETLINK_FORMAT_BINARY_UNICAST*
+int mUeventSock; // NETLINK_KOBJECT_UEVENT  NETLINK_FORMAT_ASCII
+int mRouteSock;  // NETLINK_ROUTE  NETLINK_FORMAT_BINARY
+int mQuotaSock;  // NETLINK_NFLOG  NETLINK_FORMAT_BINARY
+int mStrictSock; // NETLINK_NETFILTER  NETLINK_FORMAT_BINARY_UNICAST
 ```
 
 * NETLINK_KOBJECT_UEVENT   
@@ -49,12 +49,12 @@ int mStrictSock; // NETLINK_NETFILTER  *NETLINK_FORMAT_BINARY_UNICAST*
 * NETLINK_NETFILTER  
   Offer to detect non-SSL/TLS network traffic
 
-在创建socket的时候，将创建上面的4中类型。
+在创建socket的时候，将创建上面的4种类型。
 ```
 if ((*sock = socket(PF_NETLINK, SOCK_DGRAM | SOCK_CLOEXEC, netlinkFamily)) < 0)
 ```
 
-当socket创建好了之后， 将传给NetlinkHandler， 用于解析消息。
+当socket创建好了之后，将传给NetlinkHandler，用于解析消息。
 ```
 NetlinkHandler *handler = new NetlinkHandler(this, *sock, format);
 if (handler->start()) {
@@ -62,6 +62,21 @@ if (handler->start()) {
     close(*sock);
     return NULL;
 }
+```
+定义的几个Handler如下
+```
+NetlinkHandler *mUeventHandler;
+NetlinkHandler *mRouteHandler;
+NetlinkHandler *mQuotaHandler;
+NetlinkHandler *mStrictHandler;
+```
+每个NetlinkHandler对象均会单独创建一个线程用于接收socket消息，当Kernel发送UEvent后，   
+NetlinkHandler便从select返回，然后调用onDataAvailable函数，该函数内部会创建一个NetlinkEvent对象。   
+NetlinkEvent对象根据socket创建时候指定的解析类型去解析来自Kernel的UEvent消息。    
+最终NetlinkHandler的onEvent被调用，各种UEvent消息在该函数内分类处理。   
+NetlinkHandler最终将处理结果通过NetworkManager中定义的广播发给NetworkManagementService。
+```
+SocketListener *mBroadcaster;
 ```
 
 Netd 如何将消息发送给Framework层
