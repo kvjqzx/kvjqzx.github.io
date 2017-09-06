@@ -1,0 +1,297 @@
+--------- beginning of system
+01-01 07:05:51.652   903  4123 I ActivityManager: Setting hasTopUi=true for pid=3322
+--------- beginning of main
+01-01 07:05:51.655  3322  3322 D PhoneStatusBar: disable: < expand ICONS* alerts SYSTEM_INFO* back home recent clock search quick_settings >
+01-01 07:05:51.700  4162  4162 I MicroDetector: Keeping mic open: false
+01-01 07:05:51.700  4162  7339 I DeviceStateChecker: DeviceStateChecker cancelled
+01-01 07:05:51.700  4162  5446 I MicroRecognitionRunner: Stopping hotword detection.
+01-01 07:05:51.701  4162  5169 I AudioController: internalShutdown
+01-01 07:05:51.701  4162  5169 I MicrophoneInputStream: mic_close com.google.android.apps.gsa.speech.audio.ae@5619350
+01-01 07:05:51.797   533  7342 D audio_hw_primary: disable_audio_route: usecase(8) reset and update mixer path: audio-record
+01-01 07:05:51.798   533  7342 D audio_hw_primary: disable_snd_device: snd_device(63: voice-rec-mic)
+01-01 07:05:51.805   533  7342 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: concurrency active 0, tx 0, rx 0, concurrency session_allowed 1
+01-01 07:05:51.809   533   688 I SoundTriggerHwService::Module: void android::SoundTriggerHwService::Module::onCallbackEvent(const sp<android::SoundTriggerHwService::CallbackEvent> &) mClient == 0
+01-01 07:05:51.811  4162  7340 I MicroRecognitionRunner: Detection finished
+01-01 07:05:52.841   903   913 D WifiService: setWifiEnabled: true pid=3322, uid=10040
+01-01 07:05:52.842   903  3175 D WifiStateMachine: setting operational mode to 1
+01-01 07:05:52.843   903  3176 D WifiStateMachine:  InitialState !CMD_START_SUPPLICANT  rt=432017/432017 0 0
+01-01 07:05:52.843   533   670 D audio_hw_primary: enable_snd_device: snd_device(78: vi-feedback)
+01-01 07:05:52.843   533   670 D audio_hw_primary: enable_audio_route: usecase(21) apply and update mixer path: spkr-vi-record
+01-01 07:05:52.872   533   670 D audio_hw_primary: enable_audio_route: usecase(1) apply and update mixer path: low-latency-playback
+01-01 07:05:53.396   533   670 D audio_hw_primary: disable_audio_route: usecase(1) reset and update mixer path: low-latency-playback
+01-01 07:05:53.409   533   670 D audio_hw_primary: disable_snd_device: snd_device(78: vi-feedback)
+01-01 07:05:53.409   533   670 D audio_hw_primary: disable_audio_route: usecase(21) reset and update mixer path: spkr-vi-record
+01-01 07:05:53.749   546   546 I cnss-daemon: wlan_service_rps_enable /sys/class/net/wlan0/queues/rx-0/rps_cpus queue 0 map 0xe
+01-01 07:05:53.750   546   546 E cnss-daemon: wlan_service_rps_enable: unable to open /sys/class/net/p2p0/queues/rx-0/rps_cpus
+01-01 07:05:53.750   543   899 D SoftapController: Softap fwReload - Ok
+01-01 07:05:53.750   903  3176 E NetdConnector: NDC Command {116 softap fwreload wlan0 STA} took too long (907ms)
+01-01 07:05:53.756   543   899 D CommandListener: Setting iface cfg
+01-01 07:05:53.756   543   899 D CommandListener: Trying to bring down wlan0
+01-01 07:05:53.758   543   899 D CommandListener: Clearing all IP addresses on wlan0
+01-01 07:05:53.763   903  3176 E WifiMonitor: killSupplicant p2ptrue init.svc.wpa_supplicant=unknown init.svc.p2p_supplicant=unknown
+01-01 07:05:53.764   903  3176 D wifi    : set interface wlan0 flags (UP)
+01-01 07:05:53.764   903  3176 I WifiHAL : Initializing wifi
+01-01 07:05:53.766   903  3176 E WifiHAL : get_firmware_bus_max_size_supported: requestResponse Error:-100
+01-01 07:05:53.766   903  3176 E WifiHAL : Failed to get supported bus size, error : -100
+01-01 07:05:53.766   903  3176 D wifi    : Did set static halHandle = 0x741370ac00
+01-01 07:05:53.766   903  3176 D wifi    : halHandle = 0x741370ac00, mVM = 0x743cee7f00, mCls = 0x1b62
+01-01 07:05:53.766   903  3176 D wifi    : array field set
+01-01 07:05:53.767   903  7373 I WifiNative-HAL: Waiting for HAL events mWifiHalHandle=498542357504
+01-01 07:05:53.767   903  7373 D wifi    : waitForHalEvents called, vm = 0x743cee7f00, obj = 0x1b62, env = 0x74137160c0
+01-01 07:05:53.772   608  7376 E LOWI-HELIUM-RTT: RomeNLRecvMessage:  received message of subtype: RTT_MSG_SUBTYPE_CAPABILITY_RSP
+01-01 07:05:53.798  7374  7374 I wpa_supplicant: Successfully initialized wpa_supplicant
+01-01 07:05:53.802  7374  7374 I wpa_supplicant: rfkill: Cannot open RFKILL control device
+01-01 07:05:53.858  7374  7374 I wpa_supplicant: rfkill: Cannot open RFKILL control device
+01-01 07:05:53.867   903  3176 D WifiNative-wlan0: doString: [LOG_LEVEL DEBUG]
+01-01 07:05:53.867   903  3176 D WifiNative-wlan0: doStringCommandNative no result
+01-01 07:05:53.867   903  3176 D WifiStateMachine: setWifiState: enabling
+01-01 07:05:53.869   903  3176 D WifiStateMachine: Supplicant start successful
+01-01 07:05:53.869   903  3176 D WifiMonitor: startMonitoring(wlan0) with mConnected = false
+01-01 07:05:53.869   903  3176 D WifiMonitor: connecting to supplicant
+01-01 07:05:53.881   903  3176 D WifiStateMachine:  SupplicantStartingState !CMD_SET_OPERATIONAL_MODE  rt=433055/433055 1 0
+01-01 07:05:53.881   903  7377 D WifiMonitor: MonitorThread start with mConnected=true
+01-01 07:05:53.881   903  3176 D WifiStateMachine:  SupplicantStartingState !CMD_START_DRIVER  rt=433055/433055 0 0
+01-01 07:05:53.881   903  3176 D WifiStateMachine:  SupplicantStartingState !CMD_SET_HIGH_PERF_MODE  rt=433055/433055 0 0
+01-01 07:05:53.881   903  3176 D WifiStateMachine:  DefaultState !CMD_SET_HIGH_PERF_MODE  rt=433056/433056 0 0
+01-01 07:05:53.881   903  3176 D WifiStateMachine: setSuspendOptimizations: 2 true
+01-01 07:05:53.881   903  3176 D WifiStateMachine: mSuspendOptNeedsDisabled 4
+01-01 07:05:53.881   903  3176 D WifiStateMachine:  SupplicantStartingState !SUP_CONNECTION_EVENT  rt=433056/433056 0 0
+01-01 07:05:53.881   903  3176 D WifiStateMachine: Supplicant connection established
+01-01 07:05:53.881   903  3176 D WifiStateMachine: setWifiState: enabled
+01-01 07:05:53.882   903  3176 D WifiNative-wlan0: doString: [DRIVER MACADDR]
+01-01 07:05:53.884   903  3176 D WifiNative-wlan0:    returned Macaddr = 64:bc:0c:4b:75:80
+01-01 07:05:53.884   903  3176 D WifiNative-wlan0: doBoolean: SET SETBAND AUTO
+01-01 07:05:53.885  7374  7374 I wpa_supplicant: wlan0: CTRL-EVENT-REGDOM-CHANGE init=USER type=UNKNOWN
+01-01 07:05:53.886   903  7377 D WifiMonitor: Event [IFNAME=wlan0 CTRL-EVENT-REGDOM-CHANGE init=USER type=UNKNOWN]
+01-01 07:05:53.886   903  7377 D WifiMonitor: wlan0 cnt=242 dispatchEvent: CTRL-EVENT-REGDOM-CHANGE init=USER type=UNKNOWN
+01-01 07:05:53.886   903  7377 D WifiMonitor: handleEvent 14 CTRL-EVENT-REGDOM-CHANGE init=USER type=UNKNOWN
+01-01 07:05:53.886   903  7377 W WifiMonitor: handleEvent unknown: 14 CTRL-EVENT-REGDOM-CHANGE init=USER type=UNKNOWN
+01-01 07:05:53.887   903  3176 D WifiNative-wlan0: SET SETBAND AUTO: returned true
+01-01 07:05:53.887   903  3176 I WifiConnectivityManager: User band preference: 0
+01-01 07:05:53.888   903  3176 D WifiStateMachine: done set frequency band 0
+01-01 07:05:53.888   903  3176 D WifiNative-wlan0: doBoolean: SET update_config 1
+01-01 07:05:53.889   903  3176 D WifiNative-wlan0: SET update_config 1: returned true
+01-01 07:05:53.889   903  3176 D WifiConfigManager: Loading config and enabling all networks 
+01-01 07:05:53.890   903  3176 D WifiNative-wlan0: doString: [LIST_NETWORKS LAST_ID=-1]
+01-01 07:05:53.891   903  3176 D WifiNative-wlan0:    returned network id / ssid / bssid / flags
+01-01 07:05:53.892   903  3176 I WifiNetworkHistory: readNetworkHistory: no config file, java.io.FileNotFoundException: /data/misc/wifi/networkHistory.txt (No such file or directory)
+01-01 07:05:53.892   903  3176 D WifiConfigManager: loaded 0 passpoint configs
+01-01 07:05:53.893   903  3176 E IpConfigStore: Error parsing configuration: java.io.FileNotFoundException: /data/misc/wifi/ipconfig.txt (No such file or directory)
+01-01 07:05:53.896   903  3176 D WifiConfigManager: --- Begin /data/misc/wifi/wpa_supplicant.conf ---
+01-01 07:05:53.897   903  3176 D WifiConfigManager: disable_scan_offload=1
+01-01 07:05:53.897   903  3176 D WifiConfigManager: driver_param=use_p2p_group_interface=1
+01-01 07:05:53.897   903  3176 D WifiConfigManager: update_config=1
+01-01 07:05:53.897   903  3176 D WifiConfigManager: device_name=bullhead
+01-01 07:05:53.897   903  3176 D WifiConfigManager: manufacturer=LGE
+01-01 07:05:53.897   903  3176 D WifiConfigManager: model_name=Nexus 5X
+01-01 07:05:53.897   903  3176 D WifiConfigManager: model_number=Nexus 5X
+01-01 07:05:53.897   903  3176 D WifiConfigManager: serial_number=00a93e2b7fb32803
+01-01 07:05:53.897   903  3176 D WifiConfigManager: device_type=10-0050F204-5
+01-01 07:05:53.897   903  3176 D WifiConfigManager: config_methods=physical_display virtual_push_button
+01-01 07:05:53.897   903  3176 D WifiConfigManager: p2p_disabled=1
+01-01 07:05:53.898   903  3176 D WifiConfigManager: pmf=1
+01-01 07:05:53.898   903  3176 D WifiConfigManager: external_sim=1
+01-01 07:05:53.898   903  3176 D WifiConfigManager: tdls_external_control=1
+01-01 07:05:53.898   903  3176 D WifiConfigManager: --- End /data/misc/wifi/wpa_supplicant.conf Contents ---
+01-01 07:05:53.898   903  3176 D WifiConfigManager: --- Begin /data/misc/wifi/wpa_supplicant.conf.tmp ---
+01-01 07:05:53.898   903  3176 W WifiConfigManager: Could not open /data/misc/wifi/wpa_supplicant.conf.tmp, java.io.FileNotFoundException: /data/misc/wifi/wpa_supplicant.conf.tmp (No such file or directory)
+01-01 07:05:53.898   903  3176 D WifiConfigManager: --- End /data/misc/wifi/wpa_supplicant.conf.tmp Contents ---
+01-01 07:05:53.898   903  3176 D WifiConfigManager: --- Begin /data/misc/wifi/networkHistory.txt ---
+01-01 07:05:53.899   903  3176 W WifiConfigManager: Could not open /data/misc/wifi/networkHistory.txt, java.io.FileNotFoundException: /data/misc/wifi/networkHistory.txt (No such file or directory)
+01-01 07:05:53.899   903  3176 D WifiConfigManager: --- End /data/misc/wifi/networkHistory.txt Contents ---
+01-01 07:05:53.899   903  3176 D WifiNative-wlan0: doBoolean: SET device_name bullhead
+01-01 07:05:53.900   903  3176 D WifiNative-wlan0: SET device_name bullhead: returned true
+01-01 07:05:53.900   903  3176 D WifiNative-wlan0: doBoolean: SET manufacturer LGE
+01-01 07:05:53.900   903  3176 D WifiNative-wlan0: SET manufacturer LGE: returned true
+01-01 07:05:53.900   903  3176 D WifiNative-wlan0: doBoolean: SET model_name Nexus 5X
+01-01 07:05:53.901   903  3176 D WifiNative-wlan0: SET model_name Nexus 5X: returned true
+01-01 07:05:53.901   903  3176 D WifiNative-wlan0: doBoolean: SET model_number Nexus 5X
+01-01 07:05:53.901   903  3176 D WifiNative-wlan0: SET model_number Nexus 5X: returned true
+01-01 07:05:53.902   903  3176 D WifiNative-wlan0: doBoolean: SET serial_number 00a93e2b7fb32803
+01-01 07:05:53.902   903  3176 D WifiNative-wlan0: SET serial_number 00a93e2b7fb32803: returned true
+01-01 07:05:53.902   903  3176 D WifiNative-wlan0: doBoolean: SET config_methods physical_display virtual_push_button
+01-01 07:05:53.903   903  3176 D WifiNative-wlan0: SET config_methods physical_display virtual_push_button: returned true
+01-01 07:05:53.903   903  3176 D WifiNative-wlan0: doBoolean: SET device_type 10-0050F204-5
+01-01 07:05:53.903   903  3176 D WifiNative-wlan0: SET device_type 10-0050F204-5: returned true
+01-01 07:05:53.904   903  3176 D WifiNative-wlan0: doBoolean: SCAN_INTERVAL 15
+01-01 07:05:53.905   903  3176 D WifiNative-wlan0: SCAN_INTERVAL 15: returned true
+01-01 07:05:53.905   903  3176 D WifiNative-HAL: Setting external_sim to 1
+01-01 07:05:53.905   903  3176 D WifiNative-wlan0: doBoolean: SET external_sim 1
+01-01 07:05:53.906   903  3176 D WifiNative-wlan0: SET external_sim 1: returned true
+01-01 07:05:53.906   903  3176 D wifi    : setting dfs flag to true, 0x7435468020
+01-01 07:05:53.906   903  3176 D WifiStateMachine: Setting OUI to DA-A1-19
+01-01 07:05:53.906   903  3176 D wifi    : setting scan oui 0x7435468020
+01-01 07:05:53.907   903  3176 D WifiNative-wlan0: doBoolean: STA_AUTOCONNECT 0
+01-01 07:05:53.908   903  3176 D WifiNative-wlan0: STA_AUTOCONNECT 0: returned true
+01-01 07:05:53.908   903  3176 D WifiCountryCode: Set ready: true
+01-01 07:05:53.908   903  3176 D WifiCountryCode: Update country code
+01-01 07:05:53.908   903  3176 D WifiNative-wlan0: doBoolean: DRIVER COUNTRY 00
+01-01 07:05:53.910  7374  7374 I wpa_supplicant: wlan0: CTRL-EVENT-REGDOM-CHANGE init=USER type=COUNTRY alpha2=00
+01-01 07:05:53.911   903  7377 D WifiMonitor: Event [IFNAME=wlan0 CTRL-EVENT-REGDOM-CHANGE init=USER type=COUNTRY alpha2=00]
+01-01 07:05:53.911   903  7377 D WifiMonitor: wlan0 cnt=243 dispatchEvent: CTRL-EVENT-REGDOM-CHANGE init=USER type=COUNTRY alpha2=00
+01-01 07:05:53.911   903  7377 D WifiMonitor: handleEvent 14 CTRL-EVENT-REGDOM-CHANGE init=USER type=COUNTRY alpha2=00
+01-01 07:05:53.911   903  7377 W WifiMonitor: handleEvent unknown: 14 CTRL-EVENT-REGDOM-CHANGE init=USER type=COUNTRY alpha2=00
+01-01 07:05:53.912   903  3176 D WifiNative-wlan0: DRIVER COUNTRY 00: returned true
+01-01 07:05:53.912   903  3176 D WifiCountryCode: Succeeded to set country code to: 00
+01-01 07:05:53.912   903  3176 D WifiStateMachine: DriverStartedState enter
+01-01 07:05:53.912   903  3176 D wifi    : android_net_wifi_get_firmware_version = 0x7435468020
+01-01 07:05:53.912   903  3176 D wifi    : buffer is 0x7413656600, length is 256
+01-01 07:05:53.913   903  3176 D wifi    : android_net_wifi_get_driver_version = 0x7435468020
+01-01 07:05:53.913   903  3176 D wifi    : buffer is 0x7413656600, length is 256
+01-01 07:05:53.913   903  3176 D wifi    : android_net_wifi_set_log_handler = 0x7435468020
+01-01 07:05:53.913   903  3176 D wifi    : android_net_wifi_get_ring_buffer_status = 0x7435468020
+01-01 07:05:53.913   903  3176 D wifi    : status is 0x74355a5680, number is 5
+01-01 07:05:53.913   903  3176 D wifi    : android_net_wifi_start_logging_ring_buffer = 0x7435468020
+01-01 07:05:53.914   903  3176 D wifi    : start logging for ring power_events_rb
+01-01 07:05:53.914   903  3176 D wifi    : android_net_wifi_start_logging_ring_buffer = 0x7435468020
+01-01 07:05:53.914   903  3176 D wifi    : start logging for ring connectivity_events_rb
+01-01 07:05:53.914   903  3176 D wifi    : android_net_wifi_start_logging_ring_buffer = 0x7435468020
+01-01 07:05:53.914   903  3176 D wifi    : start logging for ring pkt_stats_rb
+01-01 07:05:53.914   903  3176 D wifi    : android_net_wifi_start_logging_ring_buffer = 0x7435468020
+01-01 07:05:53.914   903  3176 D wifi    : start logging for ring driver_prints_rb
+01-01 07:05:53.914   903  3176 D wifi    : android_net_wifi_start_logging_ring_buffer = 0x7435468020
+01-01 07:05:53.915   903  3176 D wifi    : start logging for ring firmware_prints_rb
+01-01 07:05:53.915   903  3176 D wifi    : android_net_wifi_start_logging_ring_buffer = 0x7435468020
+01-01 07:05:53.915   903  3176 D wifi    : start logging for ring power_events_rb
+01-01 07:05:53.915   903  3176 D wifi    : android_net_wifi_start_logging_ring_buffer = 0x7435468020
+01-01 07:05:53.915   903  3176 D wifi    : start logging for ring connectivity_events_rb
+01-01 07:05:53.915   903  3176 D wifi    : android_net_wifi_start_logging_ring_buffer = 0x7435468020
+01-01 07:05:53.916   903  3176 D wifi    : start logging for ring pkt_stats_rb
+01-01 07:05:53.916   903  3176 D wifi    : android_net_wifi_start_logging_ring_buffer = 0x7435468020
+01-01 07:05:53.916   903  3176 D wifi    : start logging for ring driver_prints_rb
+01-01 07:05:53.916   903  3176 D wifi    : android_net_wifi_start_logging_ring_buffer = 0x7435468020
+01-01 07:05:53.916   903  3176 D wifi    : start logging for ring firmware_prints_rb
+01-01 07:05:53.916   903  3176 D WifiNative-wlan0: doBoolean: DRIVER BTCOEXSCAN-STOP
+01-01 07:05:53.917   903  3176 D WifiNative-wlan0: DRIVER BTCOEXSCAN-STOP: returned true
+01-01 07:05:53.917   903  3176 D WifiStateMachine: setDetailed state, old =DISCONNECTED and new state=DISCONNECTED hidden=false
+01-01 07:05:53.917   903  3176 D WifiNative-wlan0: doBoolean: DRIVER RXFILTER-STOP
+01-01 07:05:53.918   903  3176 D WifiNative-wlan0: DRIVER RXFILTER-STOP: returned true
+01-01 07:05:53.918   903  3176 D WifiNative-wlan0: doBoolean: DRIVER RXFILTER-ADD 2
+01-01 07:05:53.918   903  3176 D WifiNative-wlan0: DRIVER RXFILTER-ADD 2: returned true
+01-01 07:05:53.918   903  3176 D WifiNative-wlan0: doBoolean: DRIVER RXFILTER-START
+01-01 07:05:53.919   903  3176 D WifiNative-wlan0: DRIVER RXFILTER-START: returned true
+01-01 07:05:53.919   903  3176 D WifiNative-wlan0: doBoolean: DRIVER RXFILTER-STOP
+01-01 07:05:53.919   903  3176 D WifiNative-wlan0: DRIVER RXFILTER-STOP: returned true
+01-01 07:05:53.919   903  3176 D WifiNative-wlan0: doBoolean: DRIVER RXFILTER-ADD 3
+01-01 07:05:53.920   903  3176 D WifiNative-wlan0: DRIVER RXFILTER-ADD 3: returned true
+01-01 07:05:53.920   903  3176 D WifiNative-wlan0: doBoolean: DRIVER RXFILTER-START
+01-01 07:05:53.920   903  3176 D WifiNative-wlan0: DRIVER RXFILTER-START: returned true
+01-01 07:05:53.920   903  3176 D WifiNative-wlan0: doString: [STATUS]
+01-01 07:05:53.921   903  7377 D WifiMonitor: Event [IFNAME=wlan0 CTRL-EVENT-STATE-CHANGE id=-1 state=0 BSSID=00:00:00:00:00:00 SSID=]
+01-01 07:05:53.921   903  7377 D WifiMonitor: wlan0 cnt=244 dispatchEvent: CTRL-EVENT-STATE-CHANGE id=-1 state=0 BSSID=00:00:00:00:00:00 SSID=
+01-01 07:05:53.921   903  3176 D WifiNative-wlan0:    returned wpa_state=DISCONNECTED p2p_device_address=66:bc:0c:4b:75:80 address=64:bc:0c:4b:75:80 uuid=487afac5-f212-53aa-9404-81339b5c3cde
+01-01 07:05:53.921   903  3176 D WifiNative-wlan0: doBoolean: DRIVER SETSUSPENDMODE 0
+01-01 07:05:53.922   903  3176 D WifiNative-wlan0: DRIVER SETSUSPENDMODE 0: returned true
+01-01 07:05:53.923   903  3176 D WifiNative-wlan0: doBoolean: SET ps 1
+01-01 07:05:53.924   903  3176 D WifiNative-wlan0: SET ps 1: returned true
+01-01 07:05:53.924   903  3176 D wifi    : android_net_wifi_setLinkLayerStats: 1
+01-01 07:05:53.924   903  3176 I WifiHAL : mpdu_size_threshold : 128, aggressive_statistics_gathering : 1
+01-01 07:05:53.924   903  3176 E WifiHAL : Handle different, update the handle
+01-01 07:05:53.924   903   903 D RttService: SCAN_AVAILABLE : 3
+01-01 07:05:53.925   903  3176 I WifiConnectivityManager: Set WiFi enabled
+01-01 07:05:53.925   903  3176 D WifiStateMachine:  Enter DisconnectedState screenOn=true
+01-01 07:05:53.925   903  3176 I WifiConnectivityManager: scheduleWatchdogTimer
+01-01 07:05:53.926   903  3179 D RttService: DefaultState got{ when=-1ms what=160512 target=com.android.internal.util.StateMachine$SmHandler }
+01-01 07:05:53.926   903  3176 D WifiStateMachine:  DisconnectedState !CMD_SET_OPERATIONAL_MODE  rt=433101/433101 1 0
+01-01 07:05:53.926   903  3176 D WifiConfigManager: setLastSelectedConfiguration -1
+01-01 07:05:53.927   903  3176 D WifiStateMachine:  DisconnectedState !CMD_START_DRIVER  rt=433101/433101 0 0
+01-01 07:05:53.927   903  3176 D WifiStateMachine:  ConnectModeState !CMD_START_DRIVER  rt=433101/433101 0 0
+01-01 07:05:53.927   903  3178 I WifiScanningService: wifi driver loaded with scan capabilities: max buckets=8
+01-01 07:05:53.927   903  3176 D WifiStateMachine:  DriverStartedState !CMD_START_DRIVER  rt=433101/433101 0 0
+01-01 07:05:53.927   903  3176 D WifiStateMachine:  DisconnectedState !CMD_GET_SUPPORTED_FEATURES uid=1000  rt=433101/433101 0 0
+01-01 07:05:53.927   903  3176 D WifiStateMachine:  ConnectModeState !CMD_GET_SUPPORTED_FEATURES uid=1000  rt=433101/433101 0 0
+01-01 07:05:53.927   903  3176 D WifiStateMachine:  DriverStartedState !CMD_GET_SUPPORTED_FEATURES uid=1000  rt=433101/433101 0 0
+01-01 07:05:53.927   903  3176 D WifiStateMachine:  SupplicantStartedState !CMD_GET_SUPPORTED_FEATURES uid=1000  rt=433102/433102 0 0
+01-01 07:05:53.927   903  3176 D WifiStateMachine:  DefaultState !CMD_GET_SUPPORTED_FEATURES uid=1000  rt=433102/433102 0 0
+01-01 07:05:53.928   903  3176 D SupplicantStateTracker: DefaultState{ when=-45ms what=131183 target=com.android.internal.util.StateMachine$SmHandler }
+01-01 07:05:53.928   903  3176 D SupplicantStateTracker: UninitializedState
+01-01 07:05:53.928   903  3176 D WifiStateMachine:  DisconnectedState !SUPPLICANT_STATE_CHANGE_EVENT  rt=433102/433102 244 0 SSID:  BSSID: 00:00:00:00:00:00 nid: -1 state: DISCONNECTED
+01-01 07:05:53.928   903  3176 D WifiStateMachine: SUPPLICANT_STATE_CHANGE_EVENT state=DISCONNECTED -> state= DISCONNECTED debouncing=false
+01-01 07:05:53.928   903  3176 D WifiStateMachine: setDetailed state, old =DISCONNECTED and new state=DISCONNECTED hidden=false
+01-01 07:05:53.928   903  3176 D WifiStateMachine:  ConnectModeState !SUPPLICANT_STATE_CHANGE_EVENT  rt=433102/433103 244 0 SSID:  BSSID: 00:00:00:00:00:00 nid: -1 state: DISCONNECTED
+01-01 07:05:53.928   903  3176 D SupplicantStateTracker: DefaultState{ when=0 what=147462 arg1=244 obj= SSID:  BSSID: 00:00:00:00:00:00 nid: -1 state: DISCONNECTED target=com.android.internal.util.StateMachine$SmHandler }
+01-01 07:05:53.929   903  3176 D SupplicantStateTracker: Supplicant state: DISCONNECTED
+01-01 07:05:53.929   903  3176 D SupplicantStateTracker: DisconnectedState
+01-01 07:05:53.929   543   899 D CommandListener: Setting iface cfg
+01-01 07:05:53.929   543   899 D CommandListener: Trying to bring up p2p0
+01-01 07:05:53.930   903  3176 D WifiStateMachine:  DisconnectedState !CMD_GET_LINK_LAYER_STATS uid=1000  rt=433104/433104 0 0
+01-01 07:05:53.930   903  3176 D WifiStateMachine:  ConnectModeState !CMD_GET_LINK_LAYER_STATS uid=1000  rt=433104/433104 0 0
+01-01 07:05:53.930   903  3176 D WifiStateMachine:  DriverStartedState !CMD_GET_LINK_LAYER_STATS uid=1000  rt=433104/433104 0 0
+01-01 07:05:53.930   903  3174 D WifiMonitor: startMonitoring(p2p0) with mConnected = true
+01-01 07:05:53.930   903  3176 D WifiStateMachine:  SupplicantStartedState !CMD_GET_LINK_LAYER_STATS uid=1000  rt=433104/433104 0 0
+01-01 07:05:53.930   903  3178 D WifiNative-wlan0: doBoolean: SCAN TYPE=ONLY
+01-01 07:05:53.931   903   919 E BatteryStatsService: no controller energy info supplied
+01-01 07:05:53.931   903  7377 D WifiMonitor: Event [IFNAME=wlan0 CTRL-EVENT-STATE-CHANGE id=-1 state=3 BSSID=00:00:00:00:00:00 SSID=]
+01-01 07:05:53.932   903  7377 D WifiMonitor: wlan0 cnt=245 dispatchEvent: CTRL-EVENT-STATE-CHANGE id=-1 state=3 BSSID=00:00:00:00:00:00 SSID=
+01-01 07:05:53.932   903  7377 D WifiMonitor: Event [IFNAME=wlan0 CTRL-EVENT-SCAN-STARTED ]
+01-01 07:05:53.932   903  7377 D WifiMonitor: wlan0 cnt=246 dispatchEvent: CTRL-EVENT-SCAN-STARTED 
+01-01 07:05:53.932   903  7377 D WifiMonitor: handleEvent 14 CTRL-EVENT-SCAN-STARTED 
+01-01 07:05:53.933   903  7377 W WifiMonitor: handleEvent unknown: 14 CTRL-EVENT-SCAN-STARTED 
+01-01 07:05:53.933   903  3176 D WifiStateMachine:  DisconnectedState !SUPPLICANT_STATE_CHANGE_EVENT  rt=433107/433107 245 0 SSID:  BSSID: 00:00:00:00:00:00 nid: -1 state: SCANNING
+01-01 07:05:53.933   903  3176 D WifiStateMachine: SUPPLICANT_STATE_CHANGE_EVENT state=SCANNING -> state= SCANNING debouncing=false
+01-01 07:05:53.933   903  3176 D WifiStateMachine: setDetailed state, old =DISCONNECTED and new state=SCANNING hidden=false
+01-01 07:05:53.933   903  3178 D WifiNative-wlan0: SCAN TYPE=ONLY: returned true
+01-01 07:05:53.936   903  3174 D WifiNative-p2p0: doBoolean: SET persistent_reconnect 1
+01-01 07:05:53.937   903  3176 D WifiStateMachine:  ConnectModeState !SUPPLICANT_STATE_CHANGE_EVENT  rt=433111/433111 245 0 SSID:  BSSID: 00:00:00:00:00:00 nid: -1 state: SCANNING
+01-01 07:05:53.937   903  3176 D WifiStateMachine:  DisconnectedState !P2P_CONNECTION_CHANGED uid=1000  rt=433112/433112 0 0 st=UNKNOWN/IDLE
+01-01 07:05:53.937   903  3176 D WifiStateMachine: Turn on scanning after p2p disconnected
+01-01 07:05:53.937   903  3176 D SupplicantStateTracker: DefaultState{ when=0 what=147462 arg1=245 obj= SSID:  BSSID: 00:00:00:00:00:00 nid: -1 state: SCANNING target=com.android.internal.util.StateMachine$SmHandler }
+01-01 07:05:53.938   903  3174 D WifiNative-p2p0: SET persistent_reconnect 1: returned true
+01-01 07:05:53.938   903  3174 D WifiNative-p2p0: doBoolean: SET device_name Android_b3db
+01-01 07:05:53.938   903  3174 D WifiNative-p2p0: SET device_name Android_b3db: returned true
+01-01 07:05:53.938   903  3174 D WifiNative-p2p0: doBoolean: SET p2p_ssid_postfix -Android_b3db
+01-01 07:05:53.939   903  3174 D WifiNative-p2p0: SET p2p_ssid_postfix -Android_b3db: returned true
+01-01 07:05:53.939   903  3174 D WifiNative-p2p0: doBoolean: SET device_type 10-0050F204-5
+01-01 07:05:53.940   903  3174 D WifiNative-p2p0: SET device_type 10-0050F204-5: returned true
+01-01 07:05:53.940   903  3174 D WifiNative-p2p0: doBoolean: SET config_methods virtual_push_button physical_display keypad
+01-01 07:05:53.940   903  3174 D WifiNative-p2p0: SET config_methods virtual_push_button physical_display keypad: returned true
+01-01 07:05:53.940   903  3174 D WifiNative-p2p0: doBoolean: P2P_SET conc_pref sta
+01-01 07:05:53.940   903  3174 D WifiNative-p2p0: P2P_SET conc_pref sta: returned true
+01-01 07:05:53.940   903  3174 D WifiNative-HAL: p2pGetDeviceAddress
+01-01 07:05:53.941   903  3174 D WifiNative-HAL: p2pGetDeviceAddress returning 66:bc:0c:4b:75:80
+01-01 07:05:53.941   903  3174 D WifiNative-p2p0: doBoolean: P2P_FLUSH
+01-01 07:05:53.941   903  3174 D WifiNative-p2p0: P2P_FLUSH: returned true
+01-01 07:05:53.942   903  3174 D WifiNative-p2p0: doBoolean: P2P_SERVICE_FLUSH
+01-01 07:05:53.942   903  3176 D SupplicantStateTracker: Supplicant state: SCANNING
+01-01 07:05:53.942   903  3176 D SupplicantStateTracker: ScanState
+01-01 07:05:53.942   903  3176 D WifiStateMachine:  DisconnectedState !CMD_GET_SUPPORTED_FEATURES uid=1000  rt=433117/433117 0 0
+01-01 07:05:53.942   903  3176 D WifiStateMachine:  ConnectModeState !CMD_GET_SUPPORTED_FEATURES uid=1000  rt=433117/433117 0 0
+01-01 07:05:53.942   903  3174 D WifiNative-p2p0: P2P_SERVICE_FLUSH: returned true
+01-01 07:05:53.942   903  3176 D WifiStateMachine:  DriverStartedState !CMD_GET_SUPPORTED_FEATURES uid=1000  rt=433117/433117 0 0
+01-01 07:05:53.942   903  3174 D WifiNative-p2p0: doString: [LIST_NETWORKS]
+01-01 07:05:53.942   903  3176 D WifiStateMachine:  SupplicantStartedState !CMD_GET_SUPPORTED_FEATURES uid=1000  rt=433117/433117 0 0
+01-01 07:05:53.942   903  3176 D WifiStateMachine:  DefaultState !CMD_GET_SUPPORTED_FEATURES uid=1000  rt=433117/433117 0 0
+01-01 07:05:53.943   903  3174 D WifiNative-p2p0:    returned network id / ssid / bssid / flags
+01-01 07:05:53.944   903  3174 D WifiNative-p2p0: doBoolean: SAVE_CONFIG
+01-01 07:05:53.955   903  3174 D WifiNative-p2p0: SAVE_CONFIG: returned true
+01-01 07:05:53.956   903  3176 D WifiStateMachine:  DisconnectedState !CMD_GET_LINK_LAYER_STATS uid=1000  rt=433130/433130 0 0
+01-01 07:05:53.956   903  3176 D WifiStateMachine:  ConnectModeState !CMD_GET_LINK_LAYER_STATS uid=1000  rt=433130/433130 0 0
+01-01 07:05:53.956   903  3176 D WifiStateMachine:  DriverStartedState !CMD_GET_LINK_LAYER_STATS uid=1000  rt=433130/433130 0 0
+01-01 07:05:53.956   903  3176 D WifiStateMachine:  SupplicantStartedState !CMD_GET_LINK_LAYER_STATS uid=1000  rt=433130/433130 0 0
+01-01 07:05:53.956   903   919 E BatteryStatsService: no controller energy info supplied
+01-01 07:05:57.550   903  7377 D WifiMonitor: Event [IFNAME=wlan0 CTRL-EVENT-SCAN-RESULTS ]
+01-01 07:05:57.551   903  7377 D WifiMonitor: wlan0 cnt=256 dispatchEvent: CTRL-EVENT-SCAN-RESULTS 
+01-01 07:05:57.551   903  7377 D WifiMonitor: handleEvent 4 CTRL-EVENT-SCAN-RESULTS 
+01-01 07:05:57.551   903  7377 D WifiMonitor: Event [IFNAME=wlan0 WPS-AP-AVAILABLE ]
+01-01 07:05:57.552   903  7377 D WifiMonitor: wlan0 cnt=257 dispatchEvent: WPS-AP-AVAILABLE 
+01-01 07:05:57.552   903  7377 W WifiMonitor: couldn't identify event type - WPS-AP-AVAILABLE 
+01-01 07:05:57.552   903  7377 D WifiMonitor: Event [IFNAME=wlan0 CTRL-EVENT-STATE-CHANGE id=-1 state=0 BSSID=00:00:00:00:00:00 SSID=]
+01-01 07:05:57.552   903  3178 D WifiNative-wlan0: doString: [BSS RANGE=0- MASK=0x29d87]
+01-01 07:05:57.553   903  3176 D WifiStateMachine:  DisconnectedState !SCAN_RESULTS_EVENT  rt=436727/436727 0 0 found=0 known=0 got=9 bcn=0 con=1 untrustedcn=0
+01-01 07:05:57.553   903  7377 D WifiMonitor: wlan0 cnt=258 dispatchEvent: CTRL-EVENT-STATE-CHANGE id=-1 state=0 BSSID=00:00:00:00:00:00 SSID=
+01-01 07:05:57.553   903  3176 D WifiStateMachine:  ConnectModeState !SCAN_RESULTS_EVENT  rt=436727/436727 0 0 found=0 known=0 got=9 bcn=0 con=1 untrustedcn=0
+01-01 07:05:57.553   903  3176 D WifiStateMachine:  DriverStartedState !SCAN_RESULTS_EVENT  rt=436728/436728 0 0 found=0 known=0 got=9 bcn=0 con=1 untrustedcn=0
+01-01 07:05:57.554   903  3176 D WifiStateMachine:  SupplicantStartedState !SCAN_RESULTS_EVENT  rt=436728/436728 0 0 found=0 known=0 got=9 bcn=0 con=1 untrustedcn=0
+01-01 07:05:57.554   903  3176 D WifiNative-wlan0: doString: [BSS RANGE=0- MASK=0x29d87]
+01-01 07:05:57.563   903  3178 D WifiNative-wlan0: doString: [BSS RANGE=5- MASK=0x29d87]
+01-01 07:05:57.569   903  3176 D WifiNative-wlan0: doString: [BSS RANGE=5- MASK=0x29d87]
+01-01 07:05:57.574   903  3178 D WifiNative-wlan0: doString: [BSS RANGE=9- MASK=0x29d87]
+01-01 07:05:57.581   903  3176 D WifiNative-wlan0: doString: [BSS RANGE=9- MASK=0x29d87]
+01-01 07:05:57.583   903  3176 D WifiStateMachine:  DisconnectedState !SUPPLICANT_STATE_CHANGE_EVENT  rt=436758/436758 258 0 SSID:  BSSID: 00:00:00:00:00:00 nid: -1 state: DISCONNECTED
+01-01 07:05:57.583   903  3176 D WifiStateMachine: SUPPLICANT_STATE_CHANGE_EVENT state=DISCONNECTED -> state= DISCONNECTED debouncing=false
+01-01 07:05:57.583   903  3176 D WifiStateMachine: setDetailed state, old =SCANNING and new state=DISCONNECTED hidden=false
+01-01 07:05:57.585   903  3176 D WifiStateMachine:  ConnectModeState !SUPPLICANT_STATE_CHANGE_EVENT  rt=436759/436759 258 0 SSID:  BSSID: 00:00:00:00:00:00 nid: -1 state: DISCONNECTED
+01-01 07:05:57.595   903  3176 D WifiStateMachine: Supplicant is under steady state: DISCONNECTED
+01-01 07:05:57.600   903  3176 D SupplicantStateTracker: DefaultState{ when=-15ms what=147462 arg1=258 obj= SSID:  BSSID: 00:00:00:00:00:00 nid: -1 state: DISCONNECTED target=com.android.internal.util.StateMachine$SmHandler }
+01-01 07:05:57.601   903  3176 D SupplicantStateTracker: Supplicant state: DISCONNECTED
+01-01 07:05:57.601   903  3176 D SupplicantStateTracker: DisconnectedState

@@ -1,0 +1,568 @@
+--------- beginning of main
+01-01 07:04:10.548  3456  3456 D PhoneStatusBar: disable: < expand ICONS* alerts SYSTEM_INFO* back home recent clock search quick_settings >
+01-01 07:04:10.588  3456  3456 W PathParser: Points are too far apart 4.030360828967057
+01-01 07:04:10.588  3456  3456 W PathParser: Points are too far apart 4.030360538880159
+01-01 07:04:13.306   505  2845 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+--------- beginning of system
+01-01 07:04:13.307   897   915 D WifiService: setWifiEnabled: true pid=3456, uid=10029
+01-01 07:04:13.308   897   915 E WifiService: Invoking mWifiStateMachine.setWifiEnabled
+01-01 07:04:13.312   897  3201 D WifiStateMachine: setting operational mode to 1
+01-01 07:04:13.312   897  3200 D WifiStateMachine:  InitialState !CMD_START_SUPPLICANT  rt=421598/421598 0 0
+01-01 07:04:13.322   505  2845 D audio_hw_primary: select_devices: out_snd_device(2: speaker) in_snd_device(0: none)
+01-01 07:04:13.323   505  2845 D msm8974_platform: platform_send_audio_calibration: sending audio calibration for snd_device(2) acdb_id(101)
+01-01 07:04:13.323   505  2845 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 1
+01-01 07:04:13.328   505  2845 D msm8974_platform: platform_send_audio_calibration: sending audio calibration for snd_device(71) acdb_id(102)
+01-01 07:04:13.329   505  2845 D audio_hw_primary: enable_snd_device: snd_device(71: vi-feedback)
+01-01 07:04:13.330   505  2845 D audio_hw_primary: enable_audio_route: apply and update mixer path: spkr-vi-record
+01-01 07:04:13.355   505  2845 D msm8974_platform: platform_send_audio_calibration: sending audio calibration for snd_device(28) acdb_id(4)
+01-01 07:04:13.356   505  2845 I ACDB-LOADER: ACDB AFE returned = -19
+01-01 07:04:13.356   505  2845 D audio_hw_primary: enable_audio_route: apply and update mixer path: low-latency-playback
+01-01 07:04:13.871   505  2845 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+01-01 07:04:13.873   505  2845 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+01-01 07:04:13.887   505  2845 D audio_hw_primary: disable_snd_device: snd_device(71: vi-feedback)
+01-01 07:04:13.887   505  2845 D audio_hw_primary: disable_audio_route: reset and update mixer path: spkr-vi-record
+01-01 07:04:13.890   505  2845 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 0
+01-01 07:04:14.133   897   926 D Tethering: sendTetherStateChangedBroadcast 1, 0, 0
+01-01 07:04:14.134   897   926 D Tethering: InitialState.processMessage what=4
+01-01 07:04:14.139   897   926 D Tethering: sendTetherStateChangedBroadcast 0, 0, 0
+01-01 07:04:14.144   500   888 D SoftapController: Softap fwReload - Ok
+01-01 07:04:14.145   897  3200 E NetdConnector: NDC Command {69 softap fwreload wlan0 STA} took too long (830ms)
+01-01 07:04:14.145   523   523 E cnss-daemon: wlan0Ä/174_REV3_2 interface name wlan0 5
+01-01 07:04:14.147   523   523 E cnss-daemon: p2p00Ä/174_REV3_2 interface name p2p0 4
+01-01 07:04:14.148   523   523 E cnss-daemon: wlan_service_rps_enable: unable to open /sys/class/net/p2p0/queues/rx-0/rps_cpus
+01-01 07:04:14.149   500   888 D CommandListener: Setting iface cfg
+01-01 07:04:14.150   500   888 D CommandListener: Trying to bring down wlan0
+01-01 07:04:14.151   500   888 D CommandListener: Clearing all IP addresses on wlan0
+01-01 07:04:14.154   897  3200 E WifiMonitor: killSupplicant p2ptrue init.svc.wpa_supplicant=unknown init.svc.p2p_supplicant=unknown
+01-01 07:04:14.156   897  3200 D wifi    : set interface wlan0 flags (UP)
+01-01 07:04:14.157   897  3200 I WifiHAL : Initializing wifi
+01-01 07:04:14.158   897  3200 I WifiHAL : nl_socket_set_buffer_size successful for user_sock
+01-01 07:04:14.159   897  3200 I WifiHAL : Initiialized diag sock successfully
+01-01 07:04:14.160   897  3200 D WifiHAL : WifihalGeneric 0x7f5aa3eb90 constructed
+01-01 07:04:14.160   897  3200 I WifiHAL : ******HexDump len:0*********
+01-01 07:04:14.161   897  3200 I WifiHAL : ******HexDump End***********
+01-01 07:04:14.161   897  3200 I WifiHAL : Got a Wi-Fi HAL module message from Driver
+01-01 07:04:14.162   897  3200 I WifiHAL : Supported feature set : db9bf
+01-01 07:04:14.162   897  3200 D WifiHAL : WifihalGeneric 0x7f5aa3eb90 destructor
+01-01 07:04:14.163   897  3200 I WifiHAL : Initializing Gscan Event Handlers
+01-01 07:04:14.163   897  3200 I WifiHAL : Initialized Wifi HAL Successfully; vendor cmd = 103 Supported features : db9bf
+01-01 07:04:14.164   897  3200 D wifi    : Did set static halHandle = 0x7f57831400
+01-01 07:04:14.164   897  3200 D wifi    : halHandle = 0x7f57831400, mVM = 0x7f771cd140, mCls = 0x20193a
+01-01 07:04:14.165   897  3200 D wifi    : array field set
+01-01 07:04:14.165   897  3200 I WifiNative-HAL: interface[0] = p2p0
+01-01 07:04:14.166   897  3200 I WifiNative-HAL: interface[1] = wlan0
+01-01 07:04:14.168   897  6989 I WifiNative-HAL: Waiting for HAL events mWifiHalHandle=546929054720
+01-01 07:04:14.168   897  6989 D wifi    : waitForHalEvents called, vm = 0x7f771cd140, obj = 0x20193a, env = 0x7f5b5cbd00
+01-01 07:04:14.194  6990  6990 I wpa_supplicant: Successfully initialized wpa_supplicant
+01-01 07:04:14.196  6990  6990 I wpa_supplicant: rfkill: Cannot open RFKILL control device
+01-01 07:04:14.209   897  6989 I WifiHAL : event received NL80211_CMD_VENDOR, vendor_id = 0x1374, subcmd = 0xa
+01-01 07:04:14.249  6990  6990 I wpa_supplicant: rfkill: Cannot open RFKILL control device
+01-01 07:04:14.257  6990  6990 I wpa_supplicant: wlan0: CTRL-EVENT-AVOID-FREQ ranges=
+01-01 07:04:14.267   897  3200 D WifiStateMachine: setWifiState: enabling
+01-01 07:04:14.268   897  3200 D WifiStateMachine: Supplicant start successful
+01-01 07:04:14.269   897  3200 D WifiMonitor: startMonitoring(wlan0) with mConnected = false
+01-01 07:04:14.269   897  3200 D WifiMonitor: connecting to supplicant
+01-01 07:04:14.272   897  3200 D WifiStateMachine:  SupplicantStartingState !CMD_SET_OPERATIONAL_MODE  rt=422557/422557 1 0
+01-01 07:04:14.272   897  6991 D WifiMonitor: MonitorThread start with mConnected=true
+01-01 07:04:14.273   897  3200 D WifiStateMachine:  SupplicantStartingState !CMD_START_DRIVER  rt=422558/422558 0 0
+01-01 07:04:14.274   897  3200 D WifiStateMachine:  SupplicantStartingState !CMD_SET_HIGH_PERF_MODE  rt=422559/422559 0 0
+01-01 07:04:14.275   897  3200 D WifiStateMachine:  DefaultState !CMD_SET_HIGH_PERF_MODE  rt=422561/422561 0 0
+01-01 07:04:14.276   897  3200 D WifiStateMachine: setSuspendOptimizations: 2 true
+01-01 07:04:14.276   897  3200 D WifiStateMachine: mSuspendOptNeedsDisabled 4
+01-01 07:04:14.277   897  3200 D WifiStateMachine:  SupplicantStartingState !CMD_TETHER_STATE_CHANGE  rt=422562/422562 0 0
+01-01 07:04:14.278   897  3200 D WifiStateMachine:  DefaultState !CMD_TETHER_STATE_CHANGE  rt=422563/422563 0 0
+01-01 07:04:14.278   897  3200 D WifiStateMachine:  SupplicantStartingState !CMD_TETHER_STATE_CHANGE  rt=422564/422564 0 0
+01-01 07:04:14.279   897  3200 D WifiStateMachine:  DefaultState !CMD_TETHER_STATE_CHANGE  rt=422564/422564 0 0
+01-01 07:04:14.280   897  3200 D WifiStateMachine:  SupplicantStartingState !SUP_CONNECTION_EVENT  rt=422565/422565 0 0
+01-01 07:04:14.280   897  3200 D WifiStateMachine: Supplicant connection established
+01-01 07:04:14.281   897  3200 D WifiStateMachine: setWifiState: enabled
+01-01 07:04:14.281   897  3200 D WifiNative-wlan0: doString: [DRIVER MACADDR]
+01-01 07:04:14.282   897  3200 D WifiNative-wlan0:    returned Macaddr = 64:bc:0c:4b:75:80
+01-01 07:04:14.283   897  3200 D WifiNative-wlan0: doBoolean: SET SETBAND AUTO
+01-01 07:04:14.284  6990  6990 I wpa_supplicant: wlan0: CTRL-EVENT-REGDOM-CHANGE init=USER type=UNKNOWN
+01-01 07:04:14.285   897  6991 D WifiMonitor: Event [IFNAME=wlan0 CTRL-EVENT-REGDOM-CHANGE init=USER type=UNKNOWN]
+01-01 07:04:14.285   897  6991 E WifiMonitor: WifiMonitor:wlan0 cnt=107 dispatchEvent: CTRL-EVENT-REGDOM-CHANGE init=USER type=UNKNOWN
+01-01 07:04:14.286   897  6991 E WifiMonitor: handleEvent 14  CTRL-EVENT-REGDOM-CHANGE init=USER type=UNKNOWN
+01-01 07:04:14.286   897  6991 E WifiMonitor: handleEvent unknown: 14  CTRL-EVENT-REGDOM-CHANGE init=USER type=UNKNOWN
+01-01 07:04:14.288   897  3200 D WifiNative-wlan0: SET SETBAND AUTO: returned true
+01-01 07:04:14.289   897  3200 D WifiStateMachine: done set frequency band 0
+01-01 07:04:14.289   897  3200 D WifiNative-wlan0: doBoolean: SET update_config 1
+01-01 07:04:14.290   897  3200 D WifiNative-wlan0: SET update_config 1: returned true
+01-01 07:04:14.290   897  3200 D WifiConfigStore: Loading config and enabling all networks 
+01-01 07:04:14.291   897  3200 D WifiNative-wlan0: doString: [LIST_NETWORKS LAST_ID=-1]
+01-01 07:04:14.291   897  3200 D WifiNative-wlan0:    returned network id / ssid / bssid / flags
+01-01 07:04:14.292   897  3200 D WifiConfigStore: loaded 0 passpoint configs
+01-01 07:04:14.293   897  3200 E WifiConfigStore: Error parsing configuration: java.io.FileNotFoundException: /data/misc/wifi/ipconfig.txt: open failed: ENOENT (No such file or directory)
+01-01 07:04:14.294   897  3200 E WifiConfigStore: readNetworkHistory: No config file, revert to default, java.io.FileNotFoundException: /data/misc/wifi/networkHistory.txt: open failed: ENOENT (No such file or directory)
+01-01 07:04:14.294   897  3200 E WifiConfigStore: java.io.FileNotFoundException: /data/misc/wifi/networkHistory.txt: open failed: ENOENT (No such file or directory)
+01-01 07:04:14.294   897  3200 E WifiConfigStore: 	at libcore.io.IoBridge.open(IoBridge.java:452)
+01-01 07:04:14.294   897  3200 E WifiConfigStore: 	at java.io.FileInputStream.<init>(FileInputStream.java:76)
+01-01 07:04:14.294   897  3200 E WifiConfigStore: 	at java.io.FileInputStream.<init>(FileInputStream.java:103)
+01-01 07:04:14.294   897  3200 E WifiConfigStore: 	at com.android.server.wifi.WifiConfigStore.readNetworkHistory(WifiConfigStore.java:2301)
+01-01 07:04:14.294   897  3200 E WifiConfigStore: 	at com.android.server.wifi.WifiConfigStore.loadConfiguredNetworks(WifiConfigStore.java:1879)
+01-01 07:04:14.294   897  3200 E WifiConfigStore: 	at com.android.server.wifi.WifiConfigStore.loadAndEnableAllNetworks(WifiConfigStore.java:726)
+01-01 07:04:14.294   897  3200 E WifiConfigStore: 	at com.android.server.wifi.WifiStateMachine$SupplicantStartingState.processMessage(WifiStateMachine.java:5937)
+01-01 07:04:14.294   897  3200 E WifiConfigStore: 	at com.android.internal.util.StateMachine$SmHandler.processMsg(StateMachine.java:968)
+01-01 07:04:14.294   897  3200 E WifiConfigStore: 	at com.android.internal.util.StateMachine$SmHandler.handleMessage(StateMachine.java:791)
+01-01 07:04:14.294   897  3200 E WifiConfigStore: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+01-01 07:04:14.294   897  3200 E WifiConfigStore: 	at android.os.Looper.loop(Looper.java:148)
+01-01 07:04:14.294   897  3200 E WifiConfigStore: 	at android.os.HandlerThread.run(HandlerThread.java:61)
+01-01 07:04:14.294   897  3200 E WifiConfigStore: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+01-01 07:04:14.294   897  3200 E WifiConfigStore: 	at libcore.io.Posix.open(Native Method)
+01-01 07:04:14.294   897  3200 E WifiConfigStore: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+01-01 07:04:14.294   897  3200 E WifiConfigStore: 	at libcore.io.IoBridge.open(IoBridge.java:438)
+01-01 07:04:14.294   897  3200 E WifiConfigStore: 	... 11 more
+01-01 07:04:14.295   897  3200 E WifiConfigStore: readAutoJoinStatus: Error parsing configurationjava.io.FileNotFoundException: /data/misc/wifi/autojoinconfig.txt: open failed: ENOENT (No such file or directory)
+01-01 07:04:14.296   897  3200 E WifiConfigStore: buildPnoList sortedWifiConfigurations size 0
+01-01 07:04:14.296   897  3200 E WifiConfigStore: --- Begin /data/misc/wifi/wpa_supplicant.conf ---
+01-01 07:04:14.297   897  3200 E WifiConfigStore: disable_scan_offload=1
+01-01 07:04:14.299   897  3200 E WifiConfigStore: driver_param=use_p2p_group_interface=1
+01-01 07:04:14.299   897  3200 E WifiConfigStore: update_config=1
+01-01 07:04:14.300   897  3200 E WifiConfigStore: device_name=bullhead
+01-01 07:04:14.300   897  3200 E WifiConfigStore: manufacturer=LGE
+01-01 07:04:14.301   897  3200 E WifiConfigStore: model_name=Nexus 5X
+01-01 07:04:14.301   897  3200 E WifiConfigStore: model_number=Nexus 5X
+01-01 07:04:14.301   897  3200 E WifiConfigStore: serial_number=00a93e2b7fb32803
+01-01 07:04:14.302   897  3200 E WifiConfigStore: device_type=10-0050F204-5
+01-01 07:04:14.302   897  3200 E WifiConfigStore: config_methods=physical_display virtual_push_button
+01-01 07:04:14.303   897  3200 E WifiConfigStore: p2p_disabled=1
+01-01 07:04:14.303   897  3200 E WifiConfigStore: pmf=1
+01-01 07:04:14.303   897  3200 E WifiConfigStore: external_sim=1
+01-01 07:04:14.304   897  3200 E WifiConfigStore: tdls_external_control=1
+01-01 07:04:14.304   897  3200 E WifiConfigStore: --- End /data/misc/wifi/wpa_supplicant.conf Contents ---
+01-01 07:04:14.305   897  3200 E WifiConfigStore: --- Begin /data/misc/wifi/wpa_supplicant.conf.tmp ---
+01-01 07:04:14.306   897  3200 E WifiConfigStore: Could not open /data/misc/wifi/wpa_supplicant.conf.tmp, java.io.FileNotFoundException: /data/misc/wifi/wpa_supplicant.conf.tmp: open failed: ENOENT (No such file or directory)
+01-01 07:04:14.307   897  3200 E WifiConfigStore: --- End /data/misc/wifi/wpa_supplicant.conf.tmp Contents ---
+01-01 07:04:14.307   897  3200 E WifiConfigStore: --- Begin /data/misc/wifi/networkHistory.txt ---
+01-01 07:04:14.308   897  3200 E WifiConfigStore: Could not open /data/misc/wifi/networkHistory.txt, java.io.FileNotFoundException: /data/misc/wifi/networkHistory.txt: open failed: ENOENT (No such file or directory)
+01-01 07:04:14.309   897  3200 E WifiConfigStore: --- End /data/misc/wifi/networkHistory.txt Contents ---
+01-01 07:04:14.310   897  3200 D WifiNative-wlan0: doString: [LOG_LEVEL DEBUG]
+01-01 07:04:14.310  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.311   897  3200 D WifiNative-wlan0:    returned OK
+01-01 07:04:14.312   897  3200 D WifiNative-wlan0: doBoolean: SET device_name bullhead
+01-01 07:04:14.312  6990  6990 D wpa_supplicant: wlan0: Control interface command 'SET device_name bullhead'
+01-01 07:04:14.313  6990  6990 D wpa_supplicant: CTRL_IFACE SET 'device_name'='bullhead'
+01-01 07:04:14.314  6990  6990 D wpa_supplicant: device_name='bullhead'
+01-01 07:04:14.314  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.315   897  3200 D WifiNative-wlan0: SET device_name bullhead: returned true
+01-01 07:04:14.316   897  3200 D WifiNative-wlan0: doBoolean: SET manufacturer LGE
+01-01 07:04:14.316  6990  6990 D wpa_supplicant: wlan0: Control interface command 'SET manufacturer LGE'
+01-01 07:04:14.317  6990  6990 D wpa_supplicant: CTRL_IFACE SET 'manufacturer'='LGE'
+01-01 07:04:14.317  6990  6990 D wpa_supplicant: manufacturer='LGE'
+01-01 07:04:14.318  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.319   897  3200 D WifiNative-wlan0: SET manufacturer LGE: returned true
+01-01 07:04:14.319   897  3200 D WifiNative-wlan0: doBoolean: SET model_name Nexus 5X
+01-01 07:04:14.320  6990  6990 D wpa_supplicant: wlan0: Control interface command 'SET model_name Nexus 5X'
+01-01 07:04:14.320  6990  6990 D wpa_supplicant: CTRL_IFACE SET 'model_name'='Nexus 5X'
+01-01 07:04:14.321  6990  6990 D wpa_supplicant: model_name='Nexus 5X'
+01-01 07:04:14.322  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.323   897  3200 D WifiNative-wlan0: SET model_name Nexus 5X: returned true
+01-01 07:04:14.323   897  3200 D WifiNative-wlan0: doBoolean: SET model_number Nexus 5X
+01-01 07:04:14.324  6990  6990 D wpa_supplicant: wlan0: Control interface command 'SET model_number Nexus 5X'
+01-01 07:04:14.325  6990  6990 D wpa_supplicant: CTRL_IFACE SET 'model_number'='Nexus 5X'
+01-01 07:04:14.325  6990  6990 D wpa_supplicant: model_number='Nexus 5X'
+01-01 07:04:14.326  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.326   897  3200 D WifiNative-wlan0: SET model_number Nexus 5X: returned true
+01-01 07:04:14.327   897  3200 D WifiNative-wlan0: doBoolean: SET serial_number 00a93e2b7fb32803
+01-01 07:04:14.328  6990  6990 D wpa_supplicant: wlan0: Control interface command 'SET serial_number 00a93e2b7fb32803'
+01-01 07:04:14.328  6990  6990 D wpa_supplicant: CTRL_IFACE SET 'serial_number'='00a93e2b7fb32803'
+01-01 07:04:14.329  6990  6990 D wpa_supplicant: serial_number='00a93e2b7fb32803'
+01-01 07:04:14.329  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.330   897  3200 D WifiNative-wlan0: SET serial_number 00a93e2b7fb32803: returned true
+01-01 07:04:14.331   897  3200 D WifiNative-wlan0: doBoolean: SET config_methods physical_display virtual_push_button
+01-01 07:04:14.331  6990  6990 D wpa_supplicant: wlan0: Control interface command 'SET config_methods physical_display virtual_push_button'
+01-01 07:04:14.332  6990  6990 D wpa_supplicant: CTRL_IFACE SET 'config_methods'='physical_display virtual_push_button'
+01-01 07:04:14.333  6990  6990 D wpa_supplicant: config_methods='physical_display virtual_push_button'
+01-01 07:04:14.333  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.334   897  3200 D WifiNative-wlan0: SET config_methods physical_display virtual_push_button: returned true
+01-01 07:04:14.335   897  3200 D WifiNative-wlan0: doBoolean: SET device_type 10-0050F204-5
+01-01 07:04:14.335  6990  6990 D wpa_supplicant: wlan0: Control interface command 'SET device_type 10-0050F204-5'
+01-01 07:04:14.336  6990  6990 D wpa_supplicant: CTRL_IFACE SET 'device_type'='10-0050F204-5'
+01-01 07:04:14.336  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.336   897  3200 D WifiNative-wlan0: SET device_type 10-0050F204-5: returned true
+01-01 07:04:14.337   897  3200 D WifiNative-wlan0: doBoolean: SCAN_INTERVAL 15
+01-01 07:04:14.337  6990  6990 D wpa_supplicant: wlan0: Control interface command 'SCAN_INTERVAL 15'
+01-01 07:04:14.337  4841  4841 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+01-01 07:04:14.338  6990  6990 D wpa_supplicant: wlan0: Setting scan interval: 15 sec
+01-01 07:04:14.338  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.339   897  3200 D WifiNative-wlan0: SCAN_INTERVAL 15: returned true
+01-01 07:04:14.339   897  3200 D WifiNative-HAL: Setting external_sim to 1
+01-01 07:04:14.340   897  3200 D WifiNative-wlan0: doBoolean: SET external_sim 1
+01-01 07:04:14.340  6990  6990 D wpa_supplicant: wlan0: Control interface command 'SET external_sim 1'
+01-01 07:04:14.340  6990  6990 D wpa_supplicant: CTRL_IFACE SET 'external_sim'='1'
+01-01 07:04:14.341  6990  6990 D wpa_supplicant: external_sim=1
+01-01 07:04:14.341  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.341   897  3200 D WifiNative-wlan0: SET external_sim 1: returned true
+01-01 07:04:14.342   897  3200 D wifi    : setting dfs flag to true, 0x7f5c2e0ac0
+01-01 07:04:14.342   897  3200 I WifiHAL : ******HexDump len:0*********
+01-01 07:04:14.343   897  3200 I WifiHAL : ******HexDump End***********
+01-01 07:04:14.343   897  3200 D WifiHAL : requestResponse: request a response
+01-01 07:04:14.344   897  3200 D WifiStateMachine: Setting OUI to DA-A1-19
+01-01 07:04:14.344   897  3200 D wifi    : setting scan oui 0x7f5c2e0ac0
+01-01 07:04:14.344   897  3200 I WifiHAL : ******HexDump len:0*********
+01-01 07:04:14.345   897  3200 I WifiHAL : ******HexDump End***********
+01-01 07:04:14.345   897  3200 I WifiHAL : wifi_set_scanning_mac_oui: MAC_OUI - da:a1:19
+01-01 07:04:14.345   897  3200 D WifiHAL : requestResponse: request a response
+01-01 07:04:14.346   897  3200 D WifiNative-wlan0: doBoolean: STA_AUTOCONNECT 0
+01-01 07:04:14.346  6990  6990 D wpa_supplicant: wlan0: Control interface command 'STA_AUTOCONNECT 0'
+01-01 07:04:14.347  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.347   897  3200 D WifiNative-wlan0: STA_AUTOCONNECT 0: returned true
+01-01 07:04:14.347   897  3200 D WifiStateMachine: DriverStartedState enter
+01-01 07:04:14.348   897  3200 D WifiNative-wlan0: doBoolean: DRIVER BTCOEXSCAN-STOP
+01-01 07:04:14.348  6990  6990 D wpa_supplicant: wlan0: Control interface command 'DRIVER BTCOEXSCAN-STOP'
+01-01 07:04:14.349  6990  6990 D wpa_supplicant: wpa_driver_nl80211_driver_cmd BTCOEXSCAN-STOP len = 0, 4096
+01-01 07:04:14.349  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.349   897  3200 D WifiNative-wlan0: DRIVER BTCOEXSCAN-STOP: returned true
+01-01 07:04:14.350   897  3200 D WifiStateMachine: setDetailed state, old =DISCONNECTED and new state=DISCONNECTED hidden=false
+01-01 07:04:14.350   897  3200 D WifiNative-wlan0: doBoolean: DRIVER RXFILTER-STOP
+01-01 07:04:14.350  6990  6990 D wpa_supplicant: wlan0: Control interface command 'DRIVER RXFILTER-STOP'
+01-01 07:04:14.351  6990  6990 D wpa_supplicant: wpa_driver_nl80211_driver_cmd RXFILTER-STOP len = 0, 4096
+01-01 07:04:14.351  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.352   897  3200 D WifiNative-wlan0: DRIVER RXFILTER-STOP: returned true
+01-01 07:04:14.352   897  3200 D WifiNative-wlan0: doBoolean: DRIVER RXFILTER-ADD 3
+01-01 07:04:14.352  6990  6990 D wpa_supplicant: wlan0: Control interface command 'DRIVER RXFILTER-ADD 3'
+01-01 07:04:14.353  6990  6990 D wpa_supplicant: wpa_driver_nl80211_driver_cmd RXFILTER-ADD 3 len = 0, 4096
+01-01 07:04:14.353  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.354   897  3200 D WifiNative-wlan0: DRIVER RXFILTER-ADD 3: returned true
+01-01 07:04:14.354   897  3200 D WifiNative-wlan0: doBoolean: DRIVER RXFILTER-START
+01-01 07:04:14.354  6990  6990 D wpa_supplicant: wlan0: Control interface command 'DRIVER RXFILTER-START'
+01-01 07:04:14.355  6990  6990 D wpa_supplicant: wpa_driver_nl80211_driver_cmd RXFILTER-START len = 0, 4096
+01-01 07:04:14.355  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.356   897  3200 D WifiNative-wlan0: DRIVER RXFILTER-START: returned true
+01-01 07:04:14.356   897  3200 D WifiNative-wlan0: doBoolean: DRIVER RXFILTER-STOP
+01-01 07:04:14.356  6990  6990 D wpa_supplicant: wlan0: Control interface command 'DRIVER RXFILTER-STOP'
+01-01 07:04:14.357  6990  6990 D wpa_supplicant: wpa_driver_nl80211_driver_cmd RXFILTER-STOP len = 0, 4096
+01-01 07:04:14.357  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.357   897  3200 D WifiNative-wlan0: DRIVER RXFILTER-STOP: returned true
+01-01 07:04:14.358   897  3200 D WifiNative-wlan0: doBoolean: DRIVER RXFILTER-REMOVE 2
+01-01 07:04:14.358  6990  6990 D wpa_supplicant: wlan0: Control interface command 'DRIVER RXFILTER-REMOVE 2'
+01-01 07:04:14.358  6990  6990 D wpa_supplicant: wpa_driver_nl80211_driver_cmd RXFILTER-REMOVE 2 len = 0, 4096
+01-01 07:04:14.359  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.359   897  3200 D WifiNative-wlan0: DRIVER RXFILTER-REMOVE 2: returned true
+01-01 07:04:14.359   897  3200 D WifiNative-wlan0: doBoolean: DRIVER RXFILTER-START
+01-01 07:04:14.360  6990  6990 D wpa_supplicant: wlan0: Control interface command 'DRIVER RXFILTER-START'
+01-01 07:04:14.360  6990  6990 D wpa_supplicant: wpa_driver_nl80211_driver_cmd RXFILTER-START len = 0, 4096
+01-01 07:04:14.360  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.361   897  3200 D WifiNative-wlan0: DRIVER RXFILTER-START: returned true
+01-01 07:04:14.361   897  3200 D WifiNative-wlan0: doString: [STATUS]
+01-01 07:04:14.361  6990  6990 D wpa_supplicant: wlan0: Control interface command 'STATUS'
+01-01 07:04:14.362  6990  6990 D wpa_supplicant: EAPOL: EAP Session-Id not available
+01-01 07:04:14.362  6990  6990 D wpa_supplicant: CTRL-DEBUG: ctrl_sock-sendmsg: sock=12 sndbuf=212992 outq=0 send_len=67
+01-01 07:04:14.363   897  6991 D WifiMonitor: Event [IFNAME=wlan0 CTRL-EVENT-STATE-CHANGE id=-1 state=0 BSSID=00:00:00:00:00:00 SSID=]
+01-01 07:04:14.363   897  6991 E WifiMonitor: WifiMonitor:wlan0 cnt=108 dispatchEvent: CTRL-EVENT-STATE-CHANGE id=-1 state=0 BSSID=00:00:00:00:00:00 SSID=
+01-01 07:04:14.363  6990  6990 D wpa_supplicant: CTRL_IFACE monitor sent successfully to /data/misc/wifi/sockets/wpa_ctrl_897-11\x00
+01-01 07:04:14.364  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=128
+01-01 07:04:14.364   897  3200 D WifiNative-wlan0:    returned wpa_state=DISCONNECTED p2p_device_address=66:bc:0c:4b:75:80 address=64:bc:0c:4b:75:80 uuid=487afac5-f212-53aa-9404-81339b5c3cde
+01-01 07:04:14.364   897  3200 E native  : do suspend false
+01-01 07:04:14.365   897  3200 D WifiNative-wlan0: doBoolean: DRIVER SETSUSPENDMODE 0
+01-01 07:04:14.365  6990  6990 D wpa_supplicant: wlan0: Control interface command 'DRIVER SETSUSPENDMODE 0'
+01-01 07:04:14.365  6990  6990 D wpa_supplicant: wpa_driver_nl80211_driver_cmd SETSUSPENDMODE 0 len = 0, 4096
+01-01 07:04:14.366  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.366   897  3200 D WifiNative-wlan0: DRIVER SETSUSPENDMODE 0: returned true
+01-01 07:04:14.366   897  3200 D WifiNative-wlan0: doBoolean: SET ps 1
+01-01 07:04:14.367  6990  6990 D wpa_supplicant: wlan0: Control interface command 'SET ps 1'
+01-01 07:04:14.367  6990  6990 D wpa_supplicant: CTRL_IFACE SET 'ps'='1'
+01-01 07:04:14.367  6990  6990 D wpa_supplicant: nl80211: set_p2p_powersave (legacy_ps=1 opp_ps=-1 ctwindow=-1)
+01-01 07:04:14.368  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.368   897  3200 D WifiNative-wlan0: SET ps 1: returned true
+01-01 07:04:14.369   897  3200 D WifiHAL : WifihalGeneric 0x7f5aa3eb90 constructed
+01-01 07:04:14.369   897   897 D RttService: SCAN_AVAILABLE : 3
+01-01 07:04:14.369   897  3200 I WifiHAL : ******HexDump len:0*********
+01-01 07:04:14.370   897  3200 I WifiHAL : ******HexDump End***********
+01-01 07:04:14.370   897  3256 D RttService: DefaultState got{ when=0 what=160512 target=com.android.internal.util.StateMachine$SmHandler }
+01-01 07:04:14.370   500   888 D CommandListener: Setting iface cfg
+01-01 07:04:14.370   897  3200 I WifiHAL : Got a Wi-Fi HAL module message from Driver
+01-01 07:04:14.371   500   888 D CommandListener: Trying to bring up p2p0
+01-01 07:04:14.371   897  3200 I WifiHAL : Supported feature set : db9bf
+01-01 07:04:14.371   897  3200 D WifiHAL : WifihalGeneric 0x7f5aa3eb90 destructor
+01-01 07:04:14.372   897  3200 I WifiHAL : Supported feature set acquired : db9bf
+01-01 07:04:14.372   897  3199 D WifiMonitor: startMonitoring(p2p0) with mConnected = true
+01-01 07:04:14.372   897  3200 D wifi    : android_net_wifi_setLinkLayerStats: 1
+01-01 07:04:14.373   897  3200 I WifiHAL : mpdu_size_threshold : 128, aggressive_statistics_gathering : 1
+01-01 07:04:14.373   897  3200 E WifiHAL : Handle different, update the handle
+01-01 07:04:14.373   897  3199 D WifiNative-p2p0: doBoolean: SET persistent_reconnect 1
+01-01 07:04:14.373   897  3255 D WifiHAL : wifi_get_gscan_capabilities: Sending cmd directly to host
+01-01 07:04:14.374   897  3200 D WifiStateMachine: Driverstarted State enter done, epno=true feature=899519
+01-01 07:04:14.374   897  3255 I WifiHAL : wifi_get_gscan_capabilities: RequestId:900
+01-01 07:04:14.374   897  3200 D WifiStateMachine:  Enter DisconnectedState scan interval 15000 mLegacyPnoEnabled= false screenOn=true useGscan=true/false
+01-01 07:04:14.376   897  3200 D WifiStateMachine:  DisconnectedState !CMD_SET_OPERATIONAL_MODE  rt=422661/422661 1 0
+01-01 07:04:14.376   897  3255 I WifiHAL : handleResponse: max_ap_cache_per_scan:32
+01-01 07:04:14.376   897  3255 I WifiHAL : max_bssid_history_entries:8
+01-01 07:04:14.376   897  3255 I WifiHAL : max_hotlist_bssids:128
+01-01 07:04:14.376   897  3255 I WifiHAL : max_hotlist_ssids:8
+01-01 07:04:14.376   897  3255 I WifiHAL : max_rssi_sample_size:0
+01-01 07:04:14.376   897  3255 I WifiHAL : max_scan_buckets:8
+01-01 07:04:14.376   897  3255 I WifiHAL : max_scan_cache_size:16384
+01-01 07:04:14.376   897  3255 I WifiHAL : max_scan_reporting_threshold:16
+01-01 07:04:14.376   897  3255 I WifiHAL : max_significant_wifi_change_aps:16
+01-01 07:04:14.376   897  3255 I WifiHAL : max_number_epno_networks:16
+01-01 07:04:14.376   897  3255 I WifiHAL : max_number_epno_networks_by_ssid:16
+01-01 07:04:14.376   897  3255 I WifiHAL : max_number_of_white_listed_ssid:4.
+01-01 07:04:14.376   897  3200 E WifiConfigStore: setLastSelectedConfiguration -1
+01-01 07:04:14.377   897  3200 D WifiStateMachine:  DisconnectedState !CMD_START_DRIVER  rt=422662/422662 0 0
+01-01 07:04:14.377  6990  6990 D wpa_supplicant: RX global ctrl_iface - hexdump(len=26): 53 45 54 20 70 65 72 73 69 73 74 65 6e 74 5f 72 65 63 6f 6e 6e 65 63 74 20 31
+01-01 07:04:14.378  6990  6990 D wpa_supplicant: GLOBAL_CTRL_IFACE SET 'persistent_reconnect'='1'
+01-01 07:04:14.377   897  3200 D WifiStateMachine:  ConnectModeState !CMD_START_DRIVER  rt=422662/422662 0 0
+01-01 07:04:14.378  6990  6990 D wpa_supplicant: p2p0: Control interface command 'SET persistent_reconnect 1'
+01-01 07:04:14.378   897  3200 D WifiStateMachine:  DriverStartedState !CMD_START_DRIVER  rt=422663/422663 0 0
+01-01 07:04:14.378  6990  6990 D wpa_supplicant: CTRL_IFACE SET 'persistent_reconnect'='1'
+01-01 07:04:14.379   897  3200 D WifiStateMachine:  DisconnectedState !CMD_GET_LINK_LAYER_STATS uid=1000  rt=422664/422664 0 0
+01-01 07:04:14.379  6990  6990 D wpa_supplicant: persistent_reconnect=1
+01-01 07:04:14.379   897  3200 D WifiStateMachine:  ConnectModeState !CMD_GET_LINK_LAYER_STATS uid=1000  rt=422665/422665 0 0
+01-01 07:04:14.379  6990  6990 D wpa_supplicant: P2P: New SSID postfix: -Android_7e5d
+01-01 07:04:14.380  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.380   897  3200 D WifiStateMachine:  DriverStartedState !CMD_GET_LINK_LAYER_STATS uid=1000  rt=422665/422665 0 0
+01-01 07:04:14.380   897  3199 D WifiNative-p2p0: SET persistent_reconnect 1: returned true
+01-01 07:04:14.381   897  3200 D WifiStateMachine:  SupplicantStartedState !CMD_GET_LINK_LAYER_STATS uid=1000  rt=422666/422666 0 0
+01-01 07:04:14.381   897  3199 D WifiNative-p2p0: doBoolean: SET device_name Android_7e5d
+01-01 07:04:14.382   897  3200 E WifiHAL : wifi_error get_wifi_radio_stats(wifi_radio_stat*, nlattr**): QCA_WLAN_VENDOR_ATTR_LL_STATS_CH_INFO not found
+01-01 07:04:14.382   897  3200 E WifiHAL : nl80211: requestResponse->nl_recvmsgs failed: -5
+01-01 07:04:14.383   897  3200 D SupplicantStateTracker: DefaultState{ when=-101ms what=131183 target=com.android.internal.util.StateMachine$SmHandler }
+01-01 07:04:14.383  6990  6990 D wpa_supplicant: RX global ctrl_iface - hexdump(len=28): 53 45 54 20 64 65 76 69 63 65 5f 6e 61 6d 65 20 41 6e 64 72 6f 69 64 5f 37 65 35 64
+01-01 07:04:14.383   897  3200 D SupplicantStateTracker: UninitializedState
+01-01 07:04:14.384  6990  6990 D wpa_supplicant: GLOBAL_CTRL_IFACE SET 'device_name'='Android_7e5d'
+01-01 07:04:14.384   897  3200 D WifiStateMachine:  DisconnectedState !SUPPLICANT_STATE_CHANGE_EVENT  rt=422669/422669 108 0 SSID:  BSSID: 00:00:00:00:00:00 nid: -1 state: DISCONNECTED
+01-01 07:04:14.384  6990  6990 D wpa_supplicant: p2p0: Control interface command 'SET device_name Android_7e5d'
+01-01 07:04:14.385   897  3200 D WifiStateMachine: SUPPLICANT_STATE_CHANGE_EVENT state=DISCONNECTED -> state= DISCONNECTED debouncing=false
+01-01 07:04:14.385  6990  6990 D wpa_supplicant: CTRL_IFACE SET 'device_name'='Android_7e5d'
+01-01 07:04:14.385   897  3200 D WifiStateMachine: setDetailed state, old =DISCONNECTED and new state=DISCONNECTED hidden=false
+01-01 07:04:14.385  6990  6990 D wpa_supplicant: device_name='Android_7e5d'
+01-01 07:04:14.386  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.386   897  3200 D WifiStateMachine:  ConnectModeState !SUPPLICANT_STATE_CHANGE_EVENT  rt=422671/422671 108 0 SSID:  BSSID: 00:00:00:00:00:00 nid: -1 state: DISCONNECTED
+01-01 07:04:14.386   897  3199 D WifiNative-p2p0: SET device_name Android_7e5d: returned true
+01-01 07:04:14.386   897  3200 D WifiStateMachine:  DisconnectedState !P2P_CONNECTION_CHANGED uid=1000  rt=422672/422672 0 0 st=UNKNOWN/IDLE
+01-01 07:04:14.387   897  3199 D WifiNative-p2p0: doBoolean: SET p2p_ssid_postfix -Android_7e5d
+01-01 07:04:14.387   897  3200 D WifiStateMachine: Turn on scanning after p2p disconnected
+01-01 07:04:14.387  6990  6990 D wpa_supplicant: RX global ctrl_iface - hexdump(len=34): 53 45 54 20 70 32 70 5f 73 73 69 64 5f 70 6f 73 74 66 69 78 20 2d 41 6e 64 72 6f 69 64 5f 37 65 ...
+01-01 07:04:14.388  6990  6990 D wpa_supplicant: GLOBAL_CTRL_IFACE SET 'p2p_ssid_postfix'='-Android_7e5d'
+01-01 07:04:14.388   897  3200 D WifiStateMachine:  DisconnectedState !CMD_START_SCAN  rt=422673/422673 -1 0 ic=0 proc(ms):12 dur:3384 cnt=7 rssi=-127 f=-1 sc=0 link=-1 tx=0.0, 0.0, 0.0  rx=0.0 fiv=20000 [on:-124682 tx:-153 rx:0 period:33414] from screen [on:-115267 period:48923]
+01-01 07:04:14.388  6990  6990 D wpa_supplicant: p2p0: Control interface command 'SET p2p_ssid_postfix -Android_7e5d'
+01-01 07:04:14.388   897  3200 D WifiStateMachine:  ConnectModeState !CMD_START_SCAN  rt=422674/422674 -1 0 ic=0 proc(ms):13 dur:3384 cnt=7 rssi=-127 f=-1 sc=0 link=-1 tx=0.0, 0.0, 0.0  rx=0.0 fiv=20000 [on:0 tx:0 rx:0 period:0] from screen [on:-115267 period:48923]
+01-01 07:04:14.388  6990  6990 D wpa_supplicant: CTRL_IFACE SET 'p2p_ssid_postfix'='-Android_7e5d'
+01-01 07:04:14.389  6990  6990 D wpa_supplicant: p2p_ssid_postfix='-Android_7e5d'
+01-01 07:04:14.389   897  3200 D WifiStateMachine:  DriverStartedState !CMD_START_SCAN  rt=422674/422674 -1 0 ic=0 proc(ms):14 dur:3384 cnt=7 rssi=-127 f=-1 sc=0 link=-1 tx=0.0, 0.0, 0.0  rx=0.0 fiv=20000 [on:0 tx:0 rx:0 period:1] from screen [on:-115267 period:48924]
+01-01 07:04:14.389  6990  6990 D wpa_supplicant: P2P: New SSID postfix: -Android_7e5d
+01-01 07:04:14.390   897  3200 D WifiNative-wlan0: doBoolean: SCAN TYPE=ONLY
+01-01 07:04:14.390  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.390   897  3199 D WifiNative-p2p0: SET p2p_ssid_postfix -Android_7e5d: returned true
+01-01 07:04:14.391   897  3199 D WifiNative-p2p0: doBoolean: SET device_type 10-0050F204-5
+01-01 07:04:14.391  6990  6990 D wpa_supplicant: wlan0: Control interface command 'SCAN TYPE=ONLY'
+01-01 07:04:14.391  6990  6990 D wpa_supplicant: wlan0: Setting scan request: 0.000000 sec
+01-01 07:04:14.392  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.392  6990  6990 D wpa_supplicant: wlan0: State: DISCONNECTED -> SCANNING
+01-01 07:04:14.392  6990  6990 D wpa_supplicant: CTRL-DEBUG: ctrl_sock-sendmsg: sock=12 sndbuf=212992 outq=768 send_len=67
+01-01 07:04:14.393   897  6991 D WifiMonitor: Event [IFNAME=wlan0 CTRL-EVENT-STATE-CHANGE id=-1 state=3 BSSID=00:00:00:00:00:00 SSID=]
+01-01 07:04:14.393   897  6991 E WifiMonitor: WifiMonitor:wlan0 cnt=109 dispatchEvent: CTRL-EVENT-STATE-CHANGE id=-1 state=3 BSSID=00:00:00:00:00:00 SSID=
+01-01 07:04:14.393   897  3200 D WifiNative-wlan0: SCAN TYPE=ONLY: returned true
+01-01 07:04:14.394   897  3200 D WifiStateMachine: [1,451,649,854,394 ms] noteScanstart no scan source uid -1
+01-01 07:04:14.394  6990  6990 D wpa_supplicant: CTRL_IFACE monitor sent successfully to /data/misc/wifi/sockets/wpa_ctrl_897-11\x00
+01-01 07:04:14.394  6990  6990 D wpa_supplicant: wlan0: Starting AP scan for wildcard SSID
+01-01 07:04:14.395  6990  6990 D wpa_supplicant: wlan0: Add radio work 'scan'@0x7fa5a5c140
+01-01 07:04:14.395  6990  6990 D wpa_supplicant: wlan0: First radio work item in the queue - schedule start immediately
+01-01 07:04:14.395  6990  6990 D wpa_supplicant: wlan0: Starting radio work 'scan'@0x7fa5a5c140 after 0.000306 second wait
+01-01 07:04:14.395  6990  6990 D wpa_supplicant: wlan0: nl80211: scan request
+01-01 07:04:14.396  6990  6990 D wpa_supplicant: Scan requested (ret=0) - scan timeout 10 seconds
+01-01 07:04:14.396  6990  6990 D wpa_supplicant: RX global ctrl_iface - hexdump(len=29): 53 45 54 20 64 65 76 69 63 65 5f 74 79 70 65 20 31 30 2d 30 30 35 30 46 32 30 34 2d 35
+01-01 07:04:14.397  6990  6990 D wpa_supplicant: GLOBAL_CTRL_IFACE SET 'device_type'='10-0050F204-5'
+01-01 07:04:14.397  6990  6990 D wpa_supplicant: p2p0: Control interface command 'SET device_type 10-0050F204-5'
+01-01 07:04:14.397  6990  6990 D wpa_supplicant: CTRL_IFACE SET 'device_type'='10-0050F204-5'
+01-01 07:04:14.398  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.398   897  3199 D WifiNative-p2p0: SET device_type 10-0050F204-5: returned true
+01-01 07:04:14.398   897  3199 D WifiNative-p2p0: doBoolean: SET config_methods virtual_push_button physical_display keypad
+01-01 07:04:14.399  6990  6990 D wpa_supplicant: nl80211: Drv Event 33 (NL80211_CMD_TRIGGER_SCAN) received for wlan0
+01-01 07:04:14.399  6990  6990 D wpa_supplicant: wlan0: nl80211: Scan trigger
+01-01 07:04:14.399  6990  6990 D wpa_supplicant: wlan0: Event SCAN_STARTED (47) received
+01-01 07:04:14.400  6990  6990 D wpa_supplicant: wlan0: Own scan request started a scan in 0.003144 seconds
+01-01 07:04:14.400  6990  6990 D wpa_supplicant: CTRL-DEBUG: ctrl_sock-sendmsg: sock=12 sndbuf=212992 outq=0 send_len=24
+01-01 07:04:14.400   897  6991 D WifiMonitor: Event [IFNAME=wlan0 CTRL-EVENT-SCAN-STARTED ]
+01-01 07:04:14.400   897  6991 E WifiMonitor: WifiMonitor:wlan0 cnt=110 dispatchEvent: CTRL-EVENT-SCAN-STARTED 
+01-01 07:04:14.401   897  3200 D WifiStateMachine:  DisconnectedState !CMD_GET_LINK_LAYER_STATS uid=1000  rt=422686/422686 0 0
+01-01 07:04:14.401   897  6991 E WifiMonitor: handleEvent 14  CTRL-EVENT-SCAN-STARTED 
+01-01 07:04:14.401  6990  6990 D wpa_supplicant: CTRL_IFACE monitor sent successfully to /data/misc/wifi/sockets/wpa_ctrl_897-11\x00
+01-01 07:04:14.402  6990  6990 D wpa_supplicant: RX global ctrl_iface - hexdump(len=62): 53 45 54 20 63 6f 6e 66 69 67 5f 6d 65 74 68 6f 64 73 20 76 69 72 74 75 61 6c 5f 70 75 73 68 5f ...
+01-01 07:04:14.401   897  3200 D WifiStateMachine:  ConnectModeState !CMD_GET_LINK_LAYER_STATS uid=1000  rt=422687/422687 0 0
+01-01 07:04:14.401   897  6991 E WifiMonitor: handleEvent unknown: 14  CTRL-EVENT-SCAN-STARTED 
+01-01 07:04:14.402  6990  6990 D wpa_supplicant: GLOBAL_CTRL_IFACE SET 'config_methods'='virtual_push_button physical_display keypad'
+01-01 07:04:14.403   897  3200 D WifiStateMachine:  DriverStartedState !CMD_GET_LINK_LAYER_STATS uid=1000  rt=422688/422688 0 0
+01-01 07:04:14.403  6990  6990 D wpa_supplicant: p2p0: Control interface command 'SET config_methods virtual_push_button physical_display keypad'
+01-01 07:04:14.403   897  3200 D WifiStateMachine:  SupplicantStartedState !CMD_GET_LINK_LAYER_STATS uid=1000  rt=422689/422689 0 0
+01-01 07:04:14.404  6990  6990 D wpa_supplicant: CTRL_IFACE SET 'config_methods'='virtual_push_button physical_display keypad'
+01-01 07:04:14.404  6990  6990 D wpa_supplicant: config_methods='virtual_push_button physical_display keypad'
+01-01 07:04:14.405  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.405   897  3199 D WifiNative-p2p0: SET config_methods virtual_push_button physical_display keypad: returned true
+01-01 07:04:14.405   897  3199 D WifiNative-p2p0: doBoolean: P2P_SET conc_pref sta
+01-01 07:04:14.406   897  3200 D SupplicantStateTracker: DefaultState{ when=-21ms what=147462 arg1=108 obj= SSID:  BSSID: 00:00:00:00:00:00 nid: -1 state: DISCONNECTED target=com.android.internal.util.StateMachine$SmHandler }
+01-01 07:04:14.406  6990  6990 D wpa_supplicant: p2p0: Control interface command 'P2P_SET conc_pref sta'
+01-01 07:04:14.407   897   924 V BatteryStatsService: WiFi energy data was reset, new WiFi energy data is WifiActivityEnergyInfo{ timestamp=422692 mStackState=3 mControllerTxTimeMs=1 mControllerRxTimeMs=0 mControllerIdleTimeMs=6 mControllerEnergyUsed=891 }
+01-01 07:04:14.407   897  3200 D SupplicantStateTracker: Supplicant state: DISCONNECTED
+01-01 07:04:14.407  6990  6990 D wpa_supplicant: Single channel concurrency preference: sta
+01-01 07:04:14.408   897  3200 D SupplicantStateTracker: DisconnectedState
+01-01 07:04:14.408  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.408   897  3200 D WifiStateMachine:  DisconnectedState !SUPPLICANT_STATE_CHANGE_EVENT  rt=422694/422694 109 0 SSID:  BSSID: 00:00:00:00:00:00 nid: -1 state: SCANNING
+01-01 07:04:14.409   897  3199 D WifiNative-p2p0: P2P_SET conc_pref sta: returned true
+01-01 07:04:14.409   897  3200 D WifiStateMachine: SUPPLICANT_STATE_CHANGE_EVENT state=SCANNING -> state= SCANNING debouncing=false
+01-01 07:04:14.409   897  3199 D WifiNative-HAL: p2pGetDeviceAddress
+01-01 07:04:14.409   897  3200 D WifiStateMachine: setDetailed state, old =DISCONNECTED and new state=SCANNING hidden=false
+01-01 07:04:14.410  6990  6990 D wpa_supplicant: RX global ctrl_iface - hexdump(len=6): 53 54 41 54 55 53
+01-01 07:04:14.410   897  3200 D WifiStateMachine: setDetailed state send new extra info0x
+01-01 07:04:14.410  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=144
+01-01 07:04:14.411   897  3199 D WifiNative-HAL: p2pGetDeviceAddress returning 66:bc:0c:4b:75:80
+01-01 07:04:14.411   897  3200 D WifiStateMachine:  ConnectModeState !SUPPLICANT_STATE_CHANGE_EVENT  rt=422696/422696 109 0 SSID:  BSSID: 00:00:00:00:00:00 nid: -1 state: SCANNING
+01-01 07:04:14.411   897  3200 D SupplicantStateTracker: DefaultState{ when=0 what=147462 arg1=109 obj= SSID:  BSSID: 00:00:00:00:00:00 nid: -1 state: SCANNING target=com.android.internal.util.StateMachine$SmHandler }
+01-01 07:04:14.412   897  3199 D WifiNative-p2p0: doBoolean: P2P_FLUSH
+01-01 07:04:14.413   897  3200 D SupplicantStateTracker: Supplicant state: SCANNING
+01-01 07:04:14.413  6990  6990 D wpa_supplicant: p2p0: Control interface command 'P2P_FLUSH'
+01-01 07:04:14.413   897  3200 D SupplicantStateTracker: ScanState
+01-01 07:04:14.414  6990  6990 D wpa_supplicant: P2P: Stopping find
+01-01 07:04:14.415  6990  6990 D wpa_supplicant: P2P: Clear timeout (state=IDLE)
+01-01 07:04:14.415  6990  6990 D wpa_supplicant: P2P: State IDLE -> IDLE
+01-01 07:04:14.416  6990  6990 D wpa_supplicant: wpa_driver_set_ap_wps_p2p_ie: Entry
+01-01 07:04:14.416  6990  6990 D wpa_supplicant: P2P: Stopping find
+01-01 07:04:14.416  6990  6990 D wpa_supplicant: P2P: Clear timeout (state=IDLE)
+01-01 07:04:14.416  6990  6990 D wpa_supplicant: P2P: State IDLE -> IDLE
+01-01 07:04:14.417  6990  6990 D wpa_supplicant: wpa_driver_set_ap_wps_p2p_ie: Entry
+01-01 07:04:14.417  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.417   897  3199 D WifiNative-p2p0: P2P_FLUSH: returned true
+01-01 07:04:14.418   897  3199 D WifiNative-p2p0: doBoolean: P2P_SERVICE_FLUSH
+01-01 07:04:14.418  6990  6990 D wpa_supplicant: p2p0: Control interface command 'P2P_SERVICE_FLUSH'
+01-01 07:04:14.418  6990  6990 D wpa_supplicant: P2P: All ASP advertisements flushed
+01-01 07:04:14.418  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.419   897  3199 D WifiNative-p2p0: P2P_SERVICE_FLUSH: returned true
+01-01 07:04:14.419   897  3199 D WifiNative-p2p0: doString: [LIST_NETWORKS]
+01-01 07:04:14.419  6990  6990 D wpa_supplicant: p2p0: Control interface command 'LIST_NETWORKS'
+01-01 07:04:14.420  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=34
+01-01 07:04:14.420   897  3199 D WifiNative-p2p0:    returned network id / ssid / bssid / flags
+01-01 07:04:14.420   897  3199 D WifiNative-p2p0: doBoolean: SAVE_CONFIG
+01-01 07:04:14.421  6990  6990 D wpa_supplicant: RX global ctrl_iface - hexdump(len=11): 53 41 56 45 5f 43 4f 4e 46 49 47
+01-01 07:04:14.421  6990  6990 D wpa_supplicant: Writing configuration file '/data/misc/wifi/wpa_supplicant.conf.tmp'
+01-01 07:04:14.428  6990  6990 D wpa_supplicant: Configuration file '/data/misc/wifi/wpa_supplicant.conf' written successfully
+01-01 07:04:14.428  6990  6990 D wpa_supplicant: wlan0: CTRL_IFACE: SAVE_CONFIG - Configuration updated
+01-01 07:04:14.429  6990  6990 D wpa_supplicant: Writing configuration file '/data/misc/wifi/p2p_supplicant.conf.tmp'
+01-01 07:04:14.432  6990  6990 D wpa_supplicant: Configuration file '/data/misc/wifi/p2p_supplicant.conf' written successfully
+01-01 07:04:14.433  6990  6990 D wpa_supplicant: p2p0: CTRL_IFACE: SAVE_CONFIG - Configuration updated
+01-01 07:04:14.433  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.433   897  3199 D WifiNative-p2p0: SAVE_CONFIG: returned true
+01-01 07:04:14.434   897  3199 D WifiNative-p2p0: doBoolean: DRIVER COUNTRY 00
+01-01 07:04:14.434  6990  6990 D wpa_supplicant: p2p0: Control interface command 'DRIVER COUNTRY 00'
+01-01 07:04:14.434  6990  6990 D wpa_supplicant: wpa_driver_nl80211_driver_cmd COUNTRY 00 len = 0, 4096
+01-01 07:04:14.435  6990  6990 D wpa_supplicant: p2p0: Event CHANNEL_LIST_CHANGED (28) received
+01-01 07:04:14.435  6990  6990 I wpa_supplicant: p2p0: CTRL-EVENT-REGDOM-CHANGE init=USER type=COUNTRY alpha2=00
+01-01 07:04:14.435  6990  6990 D wpa_supplicant: CTRL-DEBUG: ctrl_sock-sendmsg: sock=12 sndbuf=212992 outq=0 send_len=57
+01-01 07:04:14.436   897  6991 D WifiMonitor: Event [IFNAME=p2p0 CTRL-EVENT-REGDOM-CHANGE init=USER type=COUNTRY alpha2=00]
+01-01 07:04:14.436   897  6991 E WifiMonitor: WifiMonitor:p2p0 cnt=111 dispatchEvent: CTRL-EVENT-REGDOM-CHANGE init=USER type=COUNTRY alpha2=00
+01-01 07:04:14.436   897  6991 E WifiMonitor: handleEvent 14  CTRL-EVENT-REGDOM-CHANGE init=USER type=COUNTRY alpha2=00
+01-01 07:04:14.437   897  6991 E WifiMonitor: handleEvent unknown: 14  CTRL-EVENT-REGDOM-CHANGE init=USER type=COUNTRY alpha2=00
+01-01 07:04:14.437  6990  6990 D wpa_supplicant: CTRL_IFACE monitor sent successfully to /data/misc/wifi/sockets/wpa_ctrl_897-11\x00
+01-01 07:04:14.437  6990  6990 D wpa_supplicant: nl80211: Regulatory information - country=00
+01-01 07:04:14.438  6990  6990 D wpa_supplicant: nl80211: 2402-2472 @ 40 MHz 20 mBm
+01-01 07:04:14.438  6990  6990 D wpa_supplicant: nl80211: 2457-2482 @ 40 MHz 20 mBm (no IR)
+01-01 07:04:14.438  6990  6990 D wpa_supplicant: nl80211: 2474-2494 @ 20 MHz 20 mBm (no OFDM) (no IR)
+01-01 07:04:14.439  6990  6990 D wpa_supplicant: nl80211: 5170-5250 @ 80 MHz 20 mBm (no IR)
+01-01 07:04:14.439  6990  6990 D wpa_supplicant: nl80211: 5250-5330 @ 80 MHz 20 mBm (no IR)
+01-01 07:04:14.439  6990  6990 D wpa_supplicant: nl80211: 5490-5710 @ 80 MHz 20 mBm (no IR)
+01-01 07:04:14.439  6990  6990 D wpa_supplicant: nl80211: 5735-5835 @ 80 MHz 20 mBm (no IR)
+01-01 07:04:14.440  6990  6990 D wpa_supplicant: nl80211: 57240-63720 @ 2160 MHz 0 mBm
+01-01 07:04:14.440  6990  6990 D wpa_supplicant: nl80211: Added 802.11b mode based on 802.11g information
+01-01 07:04:14.440  6990  6990 D wpa_supplicant: P2P: Add operating class 81
+01-01 07:04:14.440  6990  6990 D wpa_supplicant: P2P: Channels - hexdump(len=11): 01 02 03 04 05 06 07 08 09 0a 0b
+01-01 07:04:14.441  6990  6990 D wpa_supplicant: P2P: Update channel list
+01-01 07:04:14.441  6990  6990 D wpa_supplicant: P2P: channels: 81:1,2,3,4,5,6,7,8,9,10,11
+01-01 07:04:14.441  6990  6990 D wpa_supplicant: P2P: cli_channels:
+01-01 07:04:14.442  6990  6990 D wpa_supplicant: wlan0: Updating hw mode
+01-01 07:04:14.442  6990  6990 D wpa_supplicant: nl80211: Regulatory information - country=00
+01-01 07:04:14.442  6990  6990 D wpa_supplicant: nl80211: 2402-2472 @ 40 MHz 20 mBm
+01-01 07:04:14.443  6990  6990 D wpa_supplicant: nl80211: 2457-2482 @ 40 MHz 20 mBm (no IR)
+01-01 07:04:14.443  6990  6990 D wpa_supplicant: nl80211: 2474-2494 @ 20 MHz 20 mBm (no OFDM) (no IR)
+01-01 07:04:14.443  6990  6990 D wpa_supplicant: nl80211: 5170-5250 @ 80 MHz 20 mBm (no IR)
+01-01 07:04:14.443  6990  6990 D wpa_supplicant: nl80211: 5250-5330 @ 80 MHz 20 mBm (no IR)
+01-01 07:04:14.444  6990  6990 D wpa_supplicant: nl80211: 5490-5710 @ 80 MHz 20 mBm (no IR)
+01-01 07:04:14.444  6990  6990 D wpa_supplicant: nl80211: 5735-5835 @ 80 MHz 20 mBm (no IR)
+01-01 07:04:14.444  6990  6990 D wpa_supplicant: nl80211: 57240-63720 @ 2160 MHz 0 mBm
+01-01 07:04:14.445  6990  6990 D wpa_supplicant: nl80211: Added 802.11b mode based on 802.11g information
+01-01 07:04:14.445  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3
+01-01 07:04:14.445   897  3199 D WifiNative-p2p0: DRIVER COUNTRY 00: returned true
+01-01 07:04:15.135  6990  6990 D wpa_supplicant: RTM_NEWLINK: ifi_index=31 ifname=p2p0 operstate=2 linkmode=1 ifi_family=0 ifi_flags=0x1003 ([UP])
+01-01 07:04:15.243  6990  6990 D wpa_supplicant: EAPOL: disable timer tick
+01-01 07:04:15.255  6990  6990 D wpa_supplicant: EAPOL: disable timer tick
+01-01 07:04:17.669  6990  6990 D wpa_supplicant: nl80211: Drv Event 34 (NL80211_CMD_NEW_SCAN_RESULTS) received for wlan0
+01-01 07:04:17.670  6990  6990 D wpa_supplicant: wlan0: nl80211: New scan results available
+01-01 07:04:17.672  6990  6990 D wpa_supplicant: nl80211: Scan included frequencies: 2412 2417 2422 2427 2432 2437 2442 2447 2452 2457 2462 5180 5200 5220 5240 5260 5280 5300 5320 5500 5520 5540 5560 5580 5600 5620 5640 5660 5680 5700 5720 5745 5765 5785 5805 5825
+01-01 07:04:17.673  6990  6990 D wpa_supplicant: wlan0: Event SCAN_RESULTS (3) received
+01-01 07:04:17.674  6990  6990 D wpa_supplicant: wlan0: Scan completed in 3.274895 seconds
+01-01 07:04:17.676  6990  6990 D wpa_supplicant: nl80211: Received scan results (7 BSSes)
+01-01 07:04:17.677  6990  6990 D wpa_supplicant: wlan0: BSS: Start scan result update 1
+01-01 07:04:17.679  6990  6990 D wpa_supplicant: wlan0: BSS: Add new id 0 BSSID 44:97:5a:50:82:f8 SSID 'wzj'
+01-01 07:04:17.680  6990  6990 D wpa_supplicant: CTRL-DEBUG: ctrl_sock-sendmsg: sock=12 sndbuf=212992 outq=0 send_len=40
+01-01 07:04:17.682  6990  6990 D wpa_supplicant: CTRL_IFACE monitor sent successfully to /data/misc/wifi/sockets/wpa_ctrl_897-11\x00
+01-01 07:04:17.683  6990  6990 D wpa_supplicant: wlan0: BSS: Add new id 1 BSSID 74:c9:a3:06:28:e1 SSID 'CMCC-Wireless'
+01-01 07:04:17.685  6990  6990 D wpa_supplicant: CTRL-DEBUG: ctrl_sock-sendmsg: sock=12 sndbuf=212992 outq=0 send_len=40
+01-01 07:04:17.687  6990  6990 D wpa_supplicant: CTRL_IFACE monitor sent successfully to /data/misc/wifi/sockets/wpa_ctrl_897-11\x00
+01-01 07:04:17.689  6990  6990 D wpa_supplicant: wlan0: BSS: Add new id 2 BSSID a0:8c:f8:e7:35:08 SSID 'CMCC-PvJk'
+01-01 07:04:17.690  6990  6990 D wpa_supplicant: CTRL-DEBUG: ctrl_sock-sendmsg: sock=12 sndbuf=212992 outq=0 send_len=40
+01-01 07:04:17.691  6990  6990 D wpa_supplicant: CTRL_IFACE monitor sent successfully to /data/misc/wifi/sockets/wpa_ctrl_897-11\x00
+01-01 07:04:17.692  6990  6990 D wpa_supplicant: wlan0: BSS: Add new id 3 BSSID 0c:82:68:5e:68:6e SSID 'Mars50MB'
+01-01 07:04:17.693  6990  6990 D wpa_supplicant: CTRL-DEBUG: ctrl_sock-sendmsg: sock=12 sndbuf=212992 outq=0 send_len=40
+01-01 07:04:17.694  6990  6990 D wpa_supplicant: CTRL_IFACE monitor sent successfully to /data/misc/wifi/sockets/wpa_ctrl_897-11\x00
+01-01 07:04:17.694  6990  6990 D wpa_supplicant: wlan0: BSS: Add new id 4 BSSID 8c:21:0a:72:07:04 SSID 'TP-LINK_720704'
+01-01 07:04:17.695  6990  6990 D wpa_supplicant: CTRL-DEBUG: ctrl_sock-sendmsg: sock=12 sndbuf=212992 outq=0 send_len=40
+01-01 07:04:17.696  6990  6990 D wpa_supplicant: CTRL_IFACE monitor sent successfully to /data/misc/wifi/sockets/wpa_ctrl_897-11\x00
+01-01 07:04:17.697  6990  6990 D wpa_supplicant: wlan0: BSS: Add new id 5 BSSID 74:c9:a3:06:2f:fd SSID 'CMCC-73ed'
+01-01 07:04:17.697  6990  6990 D wpa_supplicant: CTRL-DEBUG: ctrl_sock-sendmsg: sock=12 sndbuf=212992 outq=0 send_len=40
+01-01 07:04:17.699  6990  6990 D wpa_supplicant: CTRL_IFACE monitor sent successfully to /data/misc/wifi/sockets/wpa_ctrl_897-11\x00
+01-01 07:04:17.699  6990  6990 D wpa_supplicant: wlan0: BSS: Add new id 6 BSSID 30:fc:68:f8:ab:75 SSID 'NB dou'
+01-01 07:04:17.700  6990  6990 D wpa_supplicant: CTRL-DEBUG: ctrl_sock-sendmsg: sock=12 sndbuf=212992 outq=0 send_len=40
+01-01 07:04:17.701  6990  6990 D wpa_supplicant: CTRL_IFACE monitor sent successfully to /data/misc/wifi/sockets/wpa_ctrl_897-11\x00
+01-01 07:04:17.702  6990  6990 D wpa_supplicant: BSS: last_scan_res_used=7/32
+01-01 07:04:17.702  6990  6990 D wpa_supplicant: wlan0: Scan-only results received
+01-01 07:04:17.703  6990  6990 D wpa_supplicant: CTRL-DEBUG: ctrl_sock-sendmsg: sock=12 sndbuf=212992 outq=0 send_len=24
+01-01 07:04:17.704   897  6991 D WifiMonitor: Event [IFNAME=wlan0 CTRL-EVENT-SCAN-RESULTS ]
+01-01 07:04:17.705  6990  6990 D wpa_supplicant: CTRL_IFACE monitor sent successfully to /data/misc/wifi/sockets/wpa_ctrl_897-11\x00
+01-01 07:04:17.705   897  6991 E WifiMonitor: WifiMonitor:wlan0 cnt=119 dispatchEvent: CTRL-EVENT-SCAN-RESULTS 
+01-01 07:04:17.706  6990  6990 D wpa_supplicant: CTRL-DEBUG: ctrl_sock-sendmsg: sock=12 sndbuf=212992 outq=0 send_len=17
+01-01 07:04:17.706   897  6991 E WifiMonitor: handleEvent 4  CTRL-EVENT-SCAN-RESULTS 
+01-01 07:04:17.707  6990  6990 D wpa_supplicant: CTRL_IFACE monitor sent successfully to /data/misc/wifi/sockets/wpa_ctrl_897-11\x00
+01-01 07:04:17.708  6990  6990 D wpa_supplicant: wlan0: Radio work 'scan'@0x7fa5a5c140 done in 3.312932 seconds
+01-01 07:04:17.708   897  3200 D WifiStateMachine:  DisconnectedState !SCAN_RESULTS_EVENT  rt=425993/425993 0 0 found=0 known=0 got=8 on:6105,36460,7 tx:23,272,1 bcn=0 con=1
+01-01 07:04:17.709   897  6991 D WifiMonitor: Event [IFNAME=wlan0 WPS-AP-AVAILABLE ]
+01-01 07:04:17.710   897  3200 D WifiStateMachine:  ConnectModeState !SCAN_RESULTS_EVENT  rt=425995/425995 0 0 found=0 known=0 got=8 on:6105,36460,7 tx:23,272,1 bcn=0 con=1
+01-01 07:04:17.710   897  6991 E WifiMonitor: WifiMonitor:wlan0 cnt=120 dispatchEvent: WPS-AP-AVAILABLE 
+01-01 07:04:17.712   897  3200 D WifiStateMachine:  DriverStartedState !SCAN_RESULTS_EVENT  rt=425997/425997 0 0 found=0 known=0 got=8 on:6105,36460,7 tx:23,272,1 bcn=0 con=1
+01-01 07:04:17.712   897  6991 W WifiMonitor: couldn't identify event type - WPS-AP-AVAILABLE 
+01-01 07:04:17.713   897  3200 D WifiStateMachine:  SupplicantStartedState !SCAN_RESULTS_EVENT  rt=425998/425998 0 0 found=0 known=0 got=8 on:6105,36460,7 tx:23,272,1 bcn=0 con=1
+01-01 07:04:17.718   897  3200 D WifiStateMachine: [1,451,649,857,717 ms] noteScanEnd no scan source onTime=3332
+01-01 07:04:17.718   897  3200 D WifiNative-wlan0: doString: [BSS RANGE=0- MASK=0x29d87]
+01-01 07:04:17.719  6990  6990 D wpa_supplicant: wlan0: Control interface command 'BSS RANGE=0- MASK=0x29d87'
+01-01 07:04:17.722  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=3668
+01-01 07:04:17.723   897  3200 D WifiNative-wlan0: doString: [BSS RANGE=5- MASK=0x29d87]
+01-01 07:04:17.724  6990  6990 D wpa_supplicant: wlan0: Control interface command 'BSS RANGE=5- MASK=0x29d87'
+01-01 07:04:17.725  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=1097
+01-01 07:04:17.728   897  3200 D WifiStateMachine: wifi setScanResults statecom.android.server.wifi.WifiStateMachine$DisconnectedState@61d8090 sup_state=SCANNING debouncing=false mConnectionRequests=1 selection=<none> mNumScanResultsReturned 7 mScanResults 7
+01-01 07:04:17.728   897  3200 D WifiAutoJoinController :  addToScanCache wzj 44:97:5a:50:82:f8 tsf=425952983 now= 1451649857728 uptime=426014 elapsed=426014
+01-01 07:04:17.729   897  3200 D WifiAutoJoinController : wzj 44:97:5a:50:82:f8 rssi=-52 cap [WPA-PSK-CCMP][WPA2-PSK-CCMP][ESS] tsf 425952983 is not scored
+01-01 07:04:17.730   897  3200 D WifiAutoJoinController :  addToScanCache CMCC-Wireless 74:c9:a3:06:28:e1 tsf=425953042 now= 1451649857728 uptime=426015 elapsed=426015
+01-01 07:04:17.730   897  3200 D WifiAutoJoinController : CMCC-Wireless 74:c9:a3:06:28:e1 rssi=-61 cap [WPA2-PSK-CCMP][ESS] tsf 425953042 is not scored
+01-01 07:04:17.731   897  3200 D WifiAutoJoinController :  addToScanCache CMCC-PvJk a0:8c:f8:e7:35:08 tsf=425953154 now= 1451649857728 uptime=426016 elapsed=426016
+01-01 07:04:17.732   897  3200 D WifiAutoJoinController : CMCC-PvJk a0:8c:f8:e7:35:08 rssi=-69 cap [WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS] tsf 425953154 is not scored
+01-01 07:04:17.732   897  3200 D WifiAutoJoinController :  addToScanCache Mars50MB 0c:82:68:5e:68:6e tsf=425953192 now= 1451649857728 uptime=426018 elapsed=426018
+01-01 07:04:17.733   897  3200 D WifiAutoJoinController : Mars50MB 0c:82:68:5e:68:6e rssi=-76 cap [WPA-PSK-CCMP][WPA2-PSK-CCMP][WPS][ESS] tsf 425953192 is not scored
+01-01 07:04:17.734   897  3200 D WifiAutoJoinController :  addToScanCache TP-LINK_720704 8c:21:0a:72:07:04 tsf=425953230 now= 1451649857728 uptime=426019 elapsed=426019
+01-01 07:04:17.735   897  3200 D WifiAutoJoinController : TP-LINK_720704 8c:21:0a:72:07:04 rssi=-78 cap [WPA-PSK-CCMP][WPA2-PSK-CCMP][WPS][ESS] tsf 425953230 is not scored
+01-01 07:04:17.735   897  3200 D WifiAutoJoinController :  addToScanCache CMCC-73ed 74:c9:a3:06:2f:fd tsf=425953081 now= 1451649857728 uptime=426020 elapsed=426020
+01-01 07:04:17.736   897  3200 D WifiAutoJoinController : CMCC-73ed 74:c9:a3:06:2f:fd rssi=-81 cap [WPA-PSK-CCMP][WPA2-PSK-CCMP][ESS] tsf 425953081 is not scored
+01-01 07:04:17.737   897  3200 D WifiAutoJoinController :  addToScanCache NB dou 30:fc:68:f8:ab:75 tsf=425953117 now= 1451649857728 uptime=426022 elapsed=426022
+01-01 07:04:17.737   897  3200 D WifiAutoJoinController : NB dou 30:fc:68:f8:ab:75 rssi=-83 cap [WPA-PSK-CCMP][WPA2-PSK-CCMP][ESS] tsf 425953117 is not scored
+01-01 07:04:17.738   897  3200 D WifiAutoJoinController : ageScanResultsOut delay 40000 size 9 now 1451649857738
+01-01 07:04:17.739   897  3200 D WifiAutoJoinController : newSupplicantResults size=7 known=0 true
+01-01 07:04:17.739   897  3200 D WifiNative-wlan0: doString: [STATUS-NO_EVENTS]
+01-01 07:04:17.740  6990  6990 D wpa_supplicant: wlan0: Control interface command 'STATUS-NO_EVENTS'
+01-01 07:04:17.740  6990  6990 D wpa_supplicant: EAPOL: EAP Session-Id not available
+01-01 07:04:17.741  6990  6990 D wpa_supplicant: CTRL-DEBUG: global_ctrl_sock-sendto: sock=12 sndbuf=212992 outq=0 send_len=124
+01-01 07:04:17.742   897  3200 D WifiNative-wlan0:    returned wpa_state=SCANNING p2p_device_address=66:bc:0c:4b:75:80 address=64:bc:0c:4b:75:80 uuid=487afac5-f212-53aa-9404-81339b5c3cde
+01-01 07:04:17.742   897  3200 D WifiAutoJoinController : attemptAutoJoin() status=wpa_state=SCANNING
+01-01 07:04:17.742   897  3200 D WifiAutoJoinController : p2p_device_address=66:bc:0c:4b:75:80
+01-01 07:04:17.742   897  3200 D WifiAutoJoinController : address=64:bc:0c:4b:75:80
+01-01 07:04:17.742   897  3200 D WifiAutoJoinController : uuid=487afac5-f212-53aa-9404-81339b5c3cde
+01-01 07:04:17.743   897  3200 D WifiAutoJoinController : attemptAutoJoin() num recent config 0 ---> suppNetId=-1
+01-01 07:04:17.744   897  3200 D WifiAutoJoinController : attemptRoam not associated
+01-01 07:04:17.744   897  3200 D WifiAutoJoinController : Done attemptAutoJoin status=0
+01-01 07:04:17.745   897  3200 E WifiConfigStore:  writeKnownNetworkHistory() num networks:0 needWrite=false
