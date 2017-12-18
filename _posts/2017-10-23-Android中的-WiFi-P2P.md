@@ -40,6 +40,22 @@ Wi-Fi P2P 是Wi-Fi联盟推出的，用于多个Wi-Fi设备在没有AP的情况�
 * Group Formation 用于决定哪个设备成为GO 并建立新的P2P Group
 * P2P Invitation 邀请P2P设备加入一个已经存在的 Group
 
+#### Device Discovery 流程
+P2P Device Discovery 分为两个状态和两个阶段。    
+两个状态：
+* Search State    
+  在2.4GHz的1，6，11(Social Channels)信道上发送Probe Request，该帧需要包含P2P IE，以区别普通的Probe Request。
+* Listen State    
+  随机选择在1，6，11信道中的一个监听Probe Request，并回复Probe Response(只处理包含P2P IE的)。该Listen Channel一旦选好，在整个Discovery阶段不变。
+
+两个阶段：
+* Scan Phase    
+  在其支持的所有信道上发送Probe Request，不处理其它设备发送过来的Probe Request帧。
+* Find Phase    
+  在Search State和Listen State之前不停切换。
+
+Discovery启动后，设备先进入Scan阶段，在支持的所有信道上发送Probe Request，完成后，进入Find阶段。     
+
 ## 相关协议
 
 * [Wi-Fi Peer-to-Peer Technical Specification v1.7]({{ BASE_PATH }}/assets/docs/Wi-Fi_P2P_Technical_Specification_v1.7.pdf)
